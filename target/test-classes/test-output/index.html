@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-MySuite">
+              <span class="suite-name border-failed">MySuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-MySuite">
+                    <span>TestSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-MySuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-MySuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-MySuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-MySuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-MySuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-MySuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">55 methods, 5 failed,   50 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MySuite" class="hide-methods failed suite-MySuite"> (hide)</a> <!-- hide-methods failed suite-MySuite -->
+                      <a href="#" panel-name="suite-MySuite" class="show-methods failed suite-MySuite"> (show)</a> <!-- show-methods failed suite-MySuite -->
+                    </span>
+                    <div class="method-list-content failed suite-MySuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PrayerTest" hash-for-method="Prayer_08">Prayer_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PrayerTest" hash-for-method="Prayer_09">Prayer_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PrayerTest" hash-for-method="Prayer_10">Prayer_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ProfileTest" hash-for-method="Profile_05">Profile_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ProfileTest" hash-for-method="Profile_07">Profile_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MySuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MySuite" class="hide-methods passed suite-MySuite"> (hide)</a> <!-- hide-methods passed suite-MySuite -->
+                      <a href="#" panel-name="suite-MySuite" class="show-methods passed suite-MySuite"> (show)</a> <!-- show-methods passed suite-MySuite -->
+                    </span>
+                    <div class="method-list-content passed suite-MySuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.AuthenticationTest" hash-for-method="Authentication_01">Authentication_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.AuthenticationTest" hash-for-method="Authentication_02">Authentication_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.AuthenticationTest" hash-for-method="Authentication_03">Authentication_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.AuthenticationTest" hash-for-method="Authentication_04">Authentication_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_01">More_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_02">More_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_03">More_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_04">More_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_05">More_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_06">More_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_07">More_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_08">More_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_09">More_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_10">More_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_11">More_11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_12">More_12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_13">More_13</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_14">More_14</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_15">More_15</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_16">More_16</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_17">More_17</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_18">More_18</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_19">More_19</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="More_20">More_20</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PlanTest" hash-for-method="Plan_01">Plan_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PlanTest" hash-for-method="Plan_02">Plan_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PlanTest" hash-for-method="Plan_03">Plan_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PlanTest" hash-for-method="Plan_05">Plan_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PlanTest" hash-for-method="Plan_06">Plan_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PlanTest" hash-for-method="Plan_07">Plan_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PlanTest" hash-for-method="Plan_08">Plan_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PlanTest" hash-for-method="Plan_09">Plan_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PlanTest" hash-for-method="Plan_10">Plan_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PlanTest" hash-for-method="Plan_12">Plan_12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PrayerTest" hash-for-method="Prayer_01">Prayer_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PrayerTest" hash-for-method="Prayer_02">Prayer_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PrayerTest" hash-for-method="Prayer_03">Prayer_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PrayerTest" hash-for-method="Prayer_04">Prayer_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PrayerTest" hash-for-method="Prayer_05">Prayer_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PrayerTest" hash-for-method="Prayer_06">Prayer_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PrayerTest" hash-for-method="Prayer_07">Prayer_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ProfileTest" hash-for-method="Profile_01">Profile_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ProfileTest" hash-for-method="Profile_02">Profile_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ProfileTest" hash-for-method="Profile_03">Profile_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ProfileTest" hash-for-method="Profile_04">Profile_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ProfileTest" hash-for-method="Profile_06">Profile_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PrayerTest" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.MoreTest" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ProfileTest" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.PlanTest" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MySuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MySuite" class="panel MySuite">
+          <div class="suite-MySuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.PrayerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Prayer_08">
+                  </a> <!-- Prayer_08 -->
+                  <span class="method-name">Prayer_08</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.ImageView&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.PrayerPage.clickPrayButton(PrayerPage.java:95)
+	at TestCases.PrayerTest.Prayer_08(PrayerTest.java:166)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Potatos-Mac&apos;, ip: &apos;fe80:0:0:0:43d:3389:bf74:843b%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: sg.wesley.SplashActivity, appPackage: sg.wesley, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: sg.wesley.SplashActivity, appPackage: sg.wesley, automationName: UiAutomator2, deviceName: Galaxy A50s, newCommandTimeout: 0, noReset: true, platformName: android}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RR8M901GK6R, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RR8M901GK6R, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 78, takesScreenshot: true, viewportRect: {height: 2053, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 82e4e63e-66c1-449e-9067-bf143f0e6aca
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.ImageView}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Prayer_09">
+                  </a> <!-- Prayer_09 -->
+                  <span class="method-name">Prayer_09</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[2]/android.widget.ImageView&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.PrayerPage.clickShareButton(PrayerPage.java:99)
+	at TestCases.PrayerTest.Prayer_09(PrayerTest.java:183)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Potatos-Mac&apos;, ip: &apos;fe80:0:0:0:43d:3389:bf74:843b%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: sg.wesley.SplashActivity, appPackage: sg.wesley, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: sg.wesley.SplashActivity, appPackage: sg.wesley, automationName: UiAutomator2, deviceName: Galaxy A50s, newCommandTimeout: 0, noReset: true, platformName: android}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RR8M901GK6R, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RR8M901GK6R, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 78, takesScreenshot: true, viewportRect: {height: 2053, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 82e4e63e-66c1-449e-9067-bf143f0e6aca
+*** Element info: {Using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.viewpager.widget.ViewPager/android.view.ViewGroup/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[2]/android.widget.ImageView}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Prayer_10">
+                  </a> <!-- Prayer_10 -->
+                  <span class="method-name">Prayer_10</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: sg.wesley:id/btn_prayer_download&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.PrayerPage.clickDownloadPointer(PrayerPage.java:115)
+	at TestCases.PrayerTest.Prayer_10(PrayerTest.java:202)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Potatos-Mac&apos;, ip: &apos;fe80:0:0:0:43d:3389:bf74:843b%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: sg.wesley.SplashActivity, appPackage: sg.wesley, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: sg.wesley.SplashActivity, appPackage: sg.wesley, automationName: UiAutomator2, deviceName: Galaxy A50s, newCommandTimeout: 0, noReset: true, platformName: android}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RR8M901GK6R, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RR8M901GK6R, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 78, takesScreenshot: true, viewportRect: {height: 2053, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 82e4e63e-66c1-449e-9067-bf143f0e6aca
+*** Element info: {Using=id, value=sg.wesley:id/btn_prayer_download}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-failed -->
+          <div class="suite-MySuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.ProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Profile_05">
+                  </a> <!-- Profile_05 -->
+                  <span class="method-name">Profile_05</span>
+                  <div class="stack-trace">java.lang.AssertionError: cannot find element did not expect to find [true] but found [false]
+	at TestCases.ProfileTest.Profile_05(ProfileTest.java:141)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Profile_07">
+                  </a> <!-- Profile_07 -->
+                  <span class="method-name">Profile_07</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: sg.wesley:id/tv_edit_profile&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.ProfilePage.clickEditProfileButton(ProfilePage.java:134)
+	at TestCases.ProfileTest.Profile_07(ProfileTest.java:184)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Potatos-Mac&apos;, ip: &apos;fe80:0:0:0:43d:3389:bf74:843b%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: sg.wesley.SplashActivity, appPackage: sg.wesley, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: sg.wesley.SplashActivity, appPackage: sg.wesley, automationName: UiAutomator2, deviceName: Galaxy A50s, newCommandTimeout: 0, noReset: true, platformName: android}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RR8M901GK6R, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RR8M901GK6R, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 78, takesScreenshot: true, viewportRect: {height: 2053, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 82e4e63e-66c1-449e-9067-bf143f0e6aca
+*** Element info: {Using=id, value=sg.wesley:id/tv_edit_profile}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-failed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.MoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_01">
+                  </a> <!-- More_01 -->
+                  <span class="method-name">More_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_02">
+                  </a> <!-- More_02 -->
+                  <span class="method-name">More_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_03">
+                  </a> <!-- More_03 -->
+                  <span class="method-name">More_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_04">
+                  </a> <!-- More_04 -->
+                  <span class="method-name">More_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_05">
+                  </a> <!-- More_05 -->
+                  <span class="method-name">More_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_06">
+                  </a> <!-- More_06 -->
+                  <span class="method-name">More_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_07">
+                  </a> <!-- More_07 -->
+                  <span class="method-name">More_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_08">
+                  </a> <!-- More_08 -->
+                  <span class="method-name">More_08</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_09">
+                  </a> <!-- More_09 -->
+                  <span class="method-name">More_09</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_10">
+                  </a> <!-- More_10 -->
+                  <span class="method-name">More_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_11">
+                  </a> <!-- More_11 -->
+                  <span class="method-name">More_11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_12">
+                  </a> <!-- More_12 -->
+                  <span class="method-name">More_12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_13">
+                  </a> <!-- More_13 -->
+                  <span class="method-name">More_13</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_14">
+                  </a> <!-- More_14 -->
+                  <span class="method-name">More_14</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_15">
+                  </a> <!-- More_15 -->
+                  <span class="method-name">More_15</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_16">
+                  </a> <!-- More_16 -->
+                  <span class="method-name">More_16</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_17">
+                  </a> <!-- More_17 -->
+                  <span class="method-name">More_17</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_18">
+                  </a> <!-- More_18 -->
+                  <span class="method-name">More_18</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_19">
+                  </a> <!-- More_19 -->
+                  <span class="method-name">More_19</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="More_20">
+                  </a> <!-- More_20 -->
+                  <span class="method-name">More_20</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.PrayerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Prayer_01">
+                  </a> <!-- Prayer_01 -->
+                  <span class="method-name">Prayer_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Prayer_02">
+                  </a> <!-- Prayer_02 -->
+                  <span class="method-name">Prayer_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Prayer_03">
+                  </a> <!-- Prayer_03 -->
+                  <span class="method-name">Prayer_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Prayer_04">
+                  </a> <!-- Prayer_04 -->
+                  <span class="method-name">Prayer_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Prayer_05">
+                  </a> <!-- Prayer_05 -->
+                  <span class="method-name">Prayer_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Prayer_06">
+                  </a> <!-- Prayer_06 -->
+                  <span class="method-name">Prayer_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Prayer_07">
+                  </a> <!-- Prayer_07 -->
+                  <span class="method-name">Prayer_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.ProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Profile_01">
+                  </a> <!-- Profile_01 -->
+                  <span class="method-name">Profile_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Profile_02">
+                  </a> <!-- Profile_02 -->
+                  <span class="method-name">Profile_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Profile_03">
+                  </a> <!-- Profile_03 -->
+                  <span class="method-name">Profile_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Profile_04">
+                  </a> <!-- Profile_04 -->
+                  <span class="method-name">Profile_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Profile_06">
+                  </a> <!-- Profile_06 -->
+                  <span class="method-name">Profile_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.PlanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Plan_01">
+                  </a> <!-- Plan_01 -->
+                  <span class="method-name">Plan_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Plan_02">
+                  </a> <!-- Plan_02 -->
+                  <span class="method-name">Plan_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Plan_03">
+                  </a> <!-- Plan_03 -->
+                  <span class="method-name">Plan_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Plan_05">
+                  </a> <!-- Plan_05 -->
+                  <span class="method-name">Plan_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Plan_06">
+                  </a> <!-- Plan_06 -->
+                  <span class="method-name">Plan_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Plan_07">
+                  </a> <!-- Plan_07 -->
+                  <span class="method-name">Plan_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Plan_08">
+                  </a> <!-- Plan_08 -->
+                  <span class="method-name">Plan_08</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Plan_09">
+                  </a> <!-- Plan_09 -->
+                  <span class="method-name">Plan_09</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Plan_10">
+                  </a> <!-- Plan_10 -->
+                  <span class="method-name">Plan_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Plan_12">
+                  </a> <!-- Plan_12 -->
+                  <span class="method-name">Plan_12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.AuthenticationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Authentication_01">
+                  </a> <!-- Authentication_01 -->
+                  <span class="method-name">Authentication_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Authentication_02">
+                  </a> <!-- Authentication_02 -->
+                  <span class="method-name">Authentication_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Authentication_03">
+                  </a> <!-- Authentication_03 -->
+                  <span class="method-name">Authentication_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Authentication_04">
+                  </a> <!-- Authentication_04 -->
+                  <span class="method-name">Authentication_04</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+        </div> <!-- panel MySuite -->
+        <div panel-name="test-xml-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/fendyridwan/Documents/Project/Wesley/wesleyAndroid/wesley/TestSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;MySuite&quot;&gt;
+  &lt;parameter name=&quot;loc&quot; value=&quot;sg&quot;/&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;2359media&quot;/&gt;
+  &lt;parameter name=&quot;port&quot; value=&quot;4723&quot;/&gt;
+  &lt;parameter name=&quot;devicename&quot; value=&quot;Galaxy A50s&quot;/&gt;
+  &lt;parameter name=&quot;env&quot; value=&quot;beta&quot;/&gt;
+  &lt;parameter name=&quot;udid&quot; value=&quot;RR8M901GK6R&quot;/&gt;
+  &lt;parameter name=&quot;runningon&quot; value=&quot;aws&quot;/&gt;
+  &lt;parameter name=&quot;useremail&quot; value=&quot;automation+android4@2359media.com&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Run devices 2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.AuthenticationTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Authentication_01&quot;/&gt;
+          &lt;include name=&quot;Authentication_02&quot;/&gt;
+          &lt;include name=&quot;Authentication_03&quot;/&gt;
+          &lt;include name=&quot;Authentication_04&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.AuthenticationTest --&gt;
+      &lt;class name=&quot;TestCases.PlanTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;Plan_01&quot;/&gt;
+          &lt;include name=&quot;Plan_02&quot;/&gt;
+          &lt;include name=&quot;Plan_03&quot;/&gt;
+          &lt;include name=&quot;Plan_05&quot;/&gt;
+          &lt;include name=&quot;Plan_06&quot;/&gt;
+          &lt;include name=&quot;Plan_07&quot;/&gt;
+          &lt;include name=&quot;Plan_08&quot;/&gt;
+          &lt;include name=&quot;Plan_09&quot;/&gt;
+          &lt;include name=&quot;Plan_10&quot;/&gt;
+          &lt;include name=&quot;Plan_11&quot;/&gt;
+          &lt;include name=&quot;Plan_12&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.PlanTest --&gt;
+      &lt;class name=&quot;TestCases.PrayerTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;Prayer_01&quot;/&gt;
+          &lt;include name=&quot;Prayer_02&quot;/&gt;
+          &lt;include name=&quot;Prayer_03&quot;/&gt;
+          &lt;include name=&quot;Prayer_04&quot;/&gt;
+          &lt;include name=&quot;Prayer_05&quot;/&gt;
+          &lt;include name=&quot;Prayer_06&quot;/&gt;
+          &lt;include name=&quot;Prayer_07&quot;/&gt;
+          &lt;include name=&quot;Prayer_08&quot;/&gt;
+          &lt;include name=&quot;Prayer_09&quot;/&gt;
+          &lt;include name=&quot;Prayer_10&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.PrayerTest --&gt;
+      &lt;class name=&quot;TestCases.MoreTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;More_01&quot;/&gt;
+          &lt;include name=&quot;More_02&quot;/&gt;
+          &lt;include name=&quot;More_03&quot;/&gt;
+          &lt;include name=&quot;More_04&quot;/&gt;
+          &lt;include name=&quot;More_05&quot;/&gt;
+          &lt;include name=&quot;More_06&quot;/&gt;
+          &lt;include name=&quot;More_07&quot;/&gt;
+          &lt;include name=&quot;More_08&quot;/&gt;
+          &lt;include name=&quot;More_09&quot;/&gt;
+          &lt;include name=&quot;More_10&quot;/&gt;
+          &lt;include name=&quot;More_11&quot;/&gt;
+          &lt;include name=&quot;More_12&quot;/&gt;
+          &lt;include name=&quot;More_13&quot;/&gt;
+          &lt;include name=&quot;More_14&quot;/&gt;
+          &lt;include name=&quot;More_15&quot;/&gt;
+          &lt;include name=&quot;More_16&quot;/&gt;
+          &lt;include name=&quot;More_17&quot;/&gt;
+          &lt;include name=&quot;More_18&quot;/&gt;
+          &lt;include name=&quot;More_19&quot;/&gt;
+          &lt;include name=&quot;More_20&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.MoreTest --&gt;
+      &lt;class name=&quot;TestCases.ProfileTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+          &lt;include name=&quot;Profile_01&quot;/&gt;
+          &lt;include name=&quot;Profile_02&quot;/&gt;
+          &lt;include name=&quot;Profile_03&quot;/&gt;
+          &lt;include name=&quot;Profile_04&quot;/&gt;
+          &lt;include name=&quot;Profile_05&quot;/&gt;
+          &lt;include name=&quot;Profile_06&quot;/&gt;
+          &lt;include name=&quot;Profile_07&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.ProfileTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run devices 2 --&gt;
+&lt;/suite&gt; &lt;!-- MySuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Run devices 2 (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MySuite');
+function tableData_MySuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(55);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Plan_01')
+data.setCell(0, 2, 'TestCases.PlanTest')
+data.setCell(0, 3, 42864);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Profile_07')
+data.setCell(1, 2, 'TestCases.ProfileTest')
+data.setCell(1, 3, 20712);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Prayer_08')
+data.setCell(2, 2, 'TestCases.PrayerTest')
+data.setCell(2, 3, 20688);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Prayer_09')
+data.setCell(3, 2, 'TestCases.PrayerTest')
+data.setCell(3, 3, 20675);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Prayer_10')
+data.setCell(4, 2, 'TestCases.PrayerTest')
+data.setCell(4, 3, 20272);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Profile_05')
+data.setCell(5, 2, 'TestCases.ProfileTest')
+data.setCell(5, 3, 17562);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Plan_02')
+data.setCell(6, 2, 'TestCases.PlanTest')
+data.setCell(6, 3, 16400);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Plan_07')
+data.setCell(7, 2, 'TestCases.PlanTest')
+data.setCell(7, 3, 13998);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'login')
+data.setCell(8, 2, 'TestCases.PrayerTest')
+data.setCell(8, 3, 13783);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'login')
+data.setCell(9, 2, 'TestCases.ProfileTest')
+data.setCell(9, 3, 13637);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'login')
+data.setCell(10, 2, 'TestCases.MoreTest')
+data.setCell(10, 3, 13498);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'login')
+data.setCell(11, 2, 'TestCases.PlanTest')
+data.setCell(11, 3, 12822);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Plan_12')
+data.setCell(12, 2, 'TestCases.PlanTest')
+data.setCell(12, 3, 12713);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Profile_04')
+data.setCell(13, 2, 'TestCases.ProfileTest')
+data.setCell(13, 3, 10692);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Authentication_02')
+data.setCell(14, 2, 'TestCases.AuthenticationTest')
+data.setCell(14, 3, 10084);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Profile_01')
+data.setCell(15, 2, 'TestCases.ProfileTest')
+data.setCell(15, 3, 9709);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'Plan_09')
+data.setCell(16, 2, 'TestCases.PlanTest')
+data.setCell(16, 3, 9707);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Authentication_01')
+data.setCell(17, 2, 'TestCases.AuthenticationTest')
+data.setCell(17, 3, 9282);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'Profile_02')
+data.setCell(18, 2, 'TestCases.ProfileTest')
+data.setCell(18, 3, 9133);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Authentication_03')
+data.setCell(19, 2, 'TestCases.AuthenticationTest')
+data.setCell(19, 3, 9028);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'Authentication_04')
+data.setCell(20, 2, 'TestCases.AuthenticationTest')
+data.setCell(20, 3, 8280);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'Plan_03')
+data.setCell(21, 2, 'TestCases.PlanTest')
+data.setCell(21, 3, 5366);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'Profile_06')
+data.setCell(22, 2, 'TestCases.ProfileTest')
+data.setCell(22, 3, 5036);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'Profile_03')
+data.setCell(23, 2, 'TestCases.ProfileTest')
+data.setCell(23, 3, 4877);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'More_10')
+data.setCell(24, 2, 'TestCases.MoreTest')
+data.setCell(24, 3, 4756);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'More_01')
+data.setCell(25, 2, 'TestCases.MoreTest')
+data.setCell(25, 3, 4417);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'Plan_05')
+data.setCell(26, 2, 'TestCases.PlanTest')
+data.setCell(26, 3, 4409);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'More_05')
+data.setCell(27, 2, 'TestCases.MoreTest')
+data.setCell(27, 3, 4311);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'More_04')
+data.setCell(28, 2, 'TestCases.MoreTest')
+data.setCell(28, 3, 4244);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'More_11')
+data.setCell(29, 2, 'TestCases.MoreTest')
+data.setCell(29, 3, 4239);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'More_14')
+data.setCell(30, 2, 'TestCases.MoreTest')
+data.setCell(30, 3, 4234);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'Prayer_06')
+data.setCell(31, 2, 'TestCases.PrayerTest')
+data.setCell(31, 3, 4203);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'More_15')
+data.setCell(32, 2, 'TestCases.MoreTest')
+data.setCell(32, 3, 4117);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'Plan_06')
+data.setCell(33, 2, 'TestCases.PlanTest')
+data.setCell(33, 3, 3975);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'Prayer_01')
+data.setCell(34, 2, 'TestCases.PrayerTest')
+data.setCell(34, 3, 3910);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'Plan_10')
+data.setCell(35, 2, 'TestCases.PlanTest')
+data.setCell(35, 3, 3662);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'More_02')
+data.setCell(36, 2, 'TestCases.MoreTest')
+data.setCell(36, 3, 3660);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'More_17')
+data.setCell(37, 2, 'TestCases.MoreTest')
+data.setCell(37, 3, 3575);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'More_18')
+data.setCell(38, 2, 'TestCases.MoreTest')
+data.setCell(38, 3, 3567);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'Plan_08')
+data.setCell(39, 2, 'TestCases.PlanTest')
+data.setCell(39, 3, 3497);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'More_06')
+data.setCell(40, 2, 'TestCases.MoreTest')
+data.setCell(40, 3, 3426);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'More_12')
+data.setCell(41, 2, 'TestCases.MoreTest')
+data.setCell(41, 3, 3293);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'Prayer_03')
+data.setCell(42, 2, 'TestCases.PrayerTest')
+data.setCell(42, 3, 3229);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'More_09')
+data.setCell(43, 2, 'TestCases.MoreTest')
+data.setCell(43, 3, 3215);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'Prayer_02')
+data.setCell(44, 2, 'TestCases.PrayerTest')
+data.setCell(44, 3, 3171);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'More_16')
+data.setCell(45, 2, 'TestCases.MoreTest')
+data.setCell(45, 3, 2969);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'More_07')
+data.setCell(46, 2, 'TestCases.MoreTest')
+data.setCell(46, 3, 2871);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'Prayer_04')
+data.setCell(47, 2, 'TestCases.PrayerTest')
+data.setCell(47, 3, 2654);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'More_13')
+data.setCell(48, 2, 'TestCases.MoreTest')
+data.setCell(48, 3, 2637);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'More_20')
+data.setCell(49, 2, 'TestCases.MoreTest')
+data.setCell(49, 3, 2635);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'More_19')
+data.setCell(50, 2, 'TestCases.MoreTest')
+data.setCell(50, 3, 2628);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'More_08')
+data.setCell(51, 2, 'TestCases.MoreTest')
+data.setCell(51, 3, 2544);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'Prayer_07')
+data.setCell(52, 2, 'TestCases.PrayerTest')
+data.setCell(52, 3, 2410);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'More_03')
+data.setCell(53, 2, 'TestCases.MoreTest')
+data.setCell(53, 3, 1722);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'Prayer_05')
+data.setCell(54, 2, 'TestCases.PrayerTest')
+data.setCell(54, 3, 276);
+window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-MySuite">
+              </div> <!-- times-div-MySuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">12 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.PrayerTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.MoreTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.ProfileTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.PlanTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.AuthenticationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">a_SetUpAppium(beta, sg, 4723, RR8M901GK6R, Galaxy A50s, aws)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-suite before">
+                <span class="method-name">deleteScreenShot</span>
+                <span class="method-start">13110 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">Authentication_01</span>
+                <span class="method-start">13159 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Authentication_02</span>
+                <span class="method-start">22445 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Authentication_03</span>
+                <span class="method-start">32533 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Authentication_04</span>
+                <span class="method-start">41563 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">49845 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.PlanTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">51293 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Plan_01</span>
+                <span class="method-start">64117 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Plan_02</span>
+                <span class="method-start">106983 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Plan_03</span>
+                <span class="method-start">123384 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Plan_05</span>
+                <span class="method-start">128751 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Plan_06</span>
+                <span class="method-start">133161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Plan_07</span>
+                <span class="method-start">137139 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Plan_08</span>
+                <span class="method-start">151139 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Plan_09</span>
+                <span class="method-start">154637 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Plan_10</span>
+                <span class="method-start">164346 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Plan_12</span>
+                <span class="method-start">168009 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">180725 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.PrayerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">182846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Prayer_01</span>
+                <span class="method-start">196632 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Prayer_02</span>
+                <span class="method-start">200544 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Prayer_03</span>
+                <span class="method-start">203716 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Prayer_04</span>
+                <span class="method-start">206946 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Prayer_05</span>
+                <span class="method-start">209601 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Prayer_06</span>
+                <span class="method-start">209879 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Prayer_07</span>
+                <span class="method-start">214083 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Prayer_08</span>
+                <span class="method-start">216494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Prayer_09</span>
+                <span class="method-start">238182 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Prayer_10</span>
+                <span class="method-start">259527 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">281887 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.MoreTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">283325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_01</span>
+                <span class="method-start">296824 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_02</span>
+                <span class="method-start">301242 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_03</span>
+                <span class="method-start">304904 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_04</span>
+                <span class="method-start">306627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_05</span>
+                <span class="method-start">310872 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_06</span>
+                <span class="method-start">315184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_07</span>
+                <span class="method-start">318611 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_08</span>
+                <span class="method-start">321483 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_09</span>
+                <span class="method-start">324028 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_10</span>
+                <span class="method-start">327245 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_11</span>
+                <span class="method-start">332003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_12</span>
+                <span class="method-start">336243 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_13</span>
+                <span class="method-start">339537 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_14</span>
+                <span class="method-start">342176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_15</span>
+                <span class="method-start">346411 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_16</span>
+                <span class="method-start">350529 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_17</span>
+                <span class="method-start">353500 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_18</span>
+                <span class="method-start">357076 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_19</span>
+                <span class="method-start">360645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">More_20</span>
+                <span class="method-start">363274 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">365910 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.ProfileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">367327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Profile_01</span>
+                <span class="method-start">380965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Profile_02</span>
+                <span class="method-start">390677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Profile_03</span>
+                <span class="method-start">399812 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Profile_04</span>
+                <span class="method-start">404690 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Profile_05</span>
+                <span class="method-start">415384 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Profile_06</span>
+                <span class="method-start">434028 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Profile_07</span>
+                <span class="method-start">439068 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">460558 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.AuthenticationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">462196 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
