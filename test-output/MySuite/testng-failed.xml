@@ -13,7 +13,7 @@
     <classes>
       <class name="TestCases.ScheduleTest">
         <methods>
-          <include name="F_002"/>
+          <include name="F_004"/>
           <include name="resetApplicationState"/>
           <include name="deleteScreenShot"/>
           <include name="a_SetUpAppium"/>

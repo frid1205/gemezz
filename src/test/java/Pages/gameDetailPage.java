@@ -43,5 +43,16 @@ public class gameDetailPage {
 		}
 	}
 	
+	public boolean verifyGameDetailFromScheduleFinish() {
+		
+		String url = driver.getCurrentUrl();
+		
+		if(url.contains("/mobile/winnersprizelist?gameid=")) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
 	
 }

@@ -1,67 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="38" total="39" passed="0">
+<testng-results skipped="0" failed="0" ignored="40" total="41" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="MySuite" duration-ms="22696" started-at="2020-12-07T17:08:48 WIB" finished-at="2020-12-07T17:09:10 WIB">
+  <suite name="MySuite" duration-ms="63585" started-at="2020-12-08T03:02:16 WIB" finished-at="2020-12-08T03:03:19 WIB">
     <groups>
     </groups>
-    <test name="Run devices 2" duration-ms="22696" started-at="2020-12-07T17:08:48 WIB" finished-at="2020-12-07T17:09:10 WIB">
+    <test name="Run devices 2" duration-ms="63585" started-at="2020-12-08T03:02:16 WIB" finished-at="2020-12-08T03:03:19 WIB">
       <class name="TestCases.ScheduleTest">
-        <test-method status="PASS" signature="accessHomePage()[pri:0, instance:TestCases.ScheduleTest@305fd85d]" name="accessHomePage" is-config="true" duration-ms="10812" started-at="2020-12-07T17:08:48 WIB" finished-at="2020-12-07T17:08:58 WIB">
+        <test-method status="PASS" signature="accessHomePage()[pri:0, instance:TestCases.ScheduleTest@305fd85d]" name="accessHomePage" is-config="true" duration-ms="10708" started-at="2020-12-08T03:02:16 WIB" finished-at="2020-12-08T03:02:26 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accessHomePage -->
-        <test-method status="FAIL" signature="F_002()[pri:0, instance:TestCases.ScheduleTest@305fd85d]" name="F_002" duration-ms="5451" started-at="2020-12-07T17:08:58 WIB" finished-at="2020-12-07T17:09:04 WIB">
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[io.appium.java_client.android.AndroidElement cannot be cast to io.appium.java_client.touch.offset.PointOption]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: io.appium.java_client.android.AndroidElement cannot be cast to io.appium.java_client.touch.offset.PointOption
-at BaseSetting.BaseSetting.tap(BaseSetting.java:156)
-at Pages.HomePage.clickTribarButton(HomePage.java:242)
-at TestCases.ScheduleTest.F_002(ScheduleTest.java:64)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+        <test-method status="PASS" signature="F_004()[pri:0, instance:TestCases.ScheduleTest@305fd85d]" name="F_004" duration-ms="47696" started-at="2020-12-08T03:02:26 WIB" finished-at="2020-12-08T03:03:14 WIB">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- F_002 -->
-        <test-method status="PASS" signature="resetApplicationState()[pri:0, instance:TestCases.ScheduleTest@305fd85d]" name="resetApplicationState" is-config="true" duration-ms="4176" started-at="2020-12-07T17:09:06 WIB" finished-at="2020-12-07T17:09:10 WIB">
+        </test-method> <!-- F_004 -->
+        <test-method status="PASS" signature="resetApplicationState()[pri:0, instance:TestCases.ScheduleTest@305fd85d]" name="resetApplicationState" is-config="true" duration-ms="5125" started-at="2020-12-08T03:03:14 WIB" finished-at="2020-12-08T03:03:19 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetApplicationState -->
       </class> <!-- TestCases.ScheduleTest -->
       <class name="TestCases.LaunchWebTest">
-        <test-method status="PASS" signature="a_SetUpAppium(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LaunchWebTest@1877ab81]" name="a_SetUpAppium" is-config="true" duration-ms="17576" started-at="2020-12-07T17:08:30 WIB" finished-at="2020-12-07T17:08:48 WIB">
+        <test-method status="PASS" signature="a_SetUpAppium(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.LaunchWebTest@1877ab81]" name="a_SetUpAppium" is-config="true" duration-ms="23401" started-at="2020-12-08T03:01:52 WIB" finished-at="2020-12-08T03:02:16 WIB">
           <params>
             <param index="0">
               <value>
@@ -97,11 +57,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- a_SetUpAppium -->
-        <test-method status="PASS" signature="deleteScreenShot()[pri:0, instance:TestCases.LaunchWebTest@1877ab81]" name="deleteScreenShot" is-config="true" duration-ms="3" started-at="2020-12-07T17:08:48 WIB" finished-at="2020-12-07T17:08:48 WIB">
+        <test-method status="PASS" signature="deleteScreenShot()[pri:0, instance:TestCases.LaunchWebTest@1877ab81]" name="deleteScreenShot" is-config="true" duration-ms="1" started-at="2020-12-08T03:02:16 WIB" finished-at="2020-12-08T03:02:16 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteScreenShot -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:TestCases.LaunchWebTest@1877ab81]" name="quitDriver" is-config="true" duration-ms="554" started-at="2020-12-07T17:09:10 WIB" finished-at="2020-12-07T17:09:11 WIB">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:TestCases.LaunchWebTest@1877ab81]" name="quitDriver" is-config="true" duration-ms="675" started-at="2020-12-08T03:03:19 WIB" finished-at="2020-12-08T03:03:20 WIB">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

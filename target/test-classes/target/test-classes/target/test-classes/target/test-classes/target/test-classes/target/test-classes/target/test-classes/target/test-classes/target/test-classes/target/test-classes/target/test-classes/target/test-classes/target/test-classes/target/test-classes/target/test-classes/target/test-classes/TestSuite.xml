@@ -57,7 +57,9 @@
 	    		
 	    		<class name="TestCases.ScheduleTest">
 	    			<methods>
-	    				<include name="F_002"/>
+	    				<exclude name="F_002"/>
+	    				<exclude name="F_003"/>
+	    				<include name="F_004"/>
 	    			</methods>
 	    		</class>
 		    </classes>  

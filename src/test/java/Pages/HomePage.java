@@ -302,7 +302,7 @@ public class HomePage extends BaseSetting{
 	public void clickSchedule() throws InterruptedException
 	{
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(schedule)).click();
-		Thread.sleep(6000);
+		Thread.sleep(7000);
 		
 	}
 	
