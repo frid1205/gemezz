@@ -11,27 +11,16 @@
   <parameter name="useremail" value="automation+android4@2359media.com"/>
   <test thread-count="5" name="Run devices 2(failed)">
     <classes>
-      <class name="TestCases.PrayerTest">
+      <class name="TestCases.ScheduleTest">
         <methods>
-          <include name="Prayer_10"/>
-          <include name="Prayer_08"/>
-          <include name="Prayer_09"/>
+          <include name="F_002"/>
           <include name="resetApplicationState"/>
           <include name="deleteScreenShot"/>
           <include name="a_SetUpAppium"/>
+          <include name="accessHomePage"/>
           <include name="quitDriver"/>
         </methods>
-      </class> <!-- TestCases.PrayerTest -->
-      <class name="TestCases.ProfileTest">
-        <methods>
-          <include name="resetApplicationState"/>
-          <include name="Profile_05"/>
-          <include name="deleteScreenShot"/>
-          <include name="a_SetUpAppium"/>
-          <include name="Profile_07"/>
-          <include name="quitDriver"/>
-        </methods>
-      </class> <!-- TestCases.ProfileTest -->
+      </class> <!-- TestCases.ScheduleTest -->
     </classes>
   </test> <!-- Run devices 2(failed) -->
 </suite> <!-- Failed suite [MySuite] -->

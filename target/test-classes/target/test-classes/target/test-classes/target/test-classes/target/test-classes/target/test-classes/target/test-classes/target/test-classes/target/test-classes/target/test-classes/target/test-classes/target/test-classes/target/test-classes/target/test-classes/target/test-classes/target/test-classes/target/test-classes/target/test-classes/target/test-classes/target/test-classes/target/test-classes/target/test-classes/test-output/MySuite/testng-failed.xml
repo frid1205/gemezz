@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MySuite]">
+  <parameter name="loc" value="sg"/>
+  <parameter name="password" value="2359media"/>
+  <parameter name="port" value="4723"/>
+  <parameter name="devicename" value="Galaxy A50s"/>
+  <parameter name="env" value="beta"/>
+  <parameter name="udid" value="RR8M901GK6R"/>
+  <parameter name="runningon" value="aws"/>
+  <parameter name="useremail" value="automation+android4@2359media.com"/>
+  <test thread-count="5" name="Run devices 2(failed)">
+    <classes>
+      <class name="TestCases.AuthenticationTest">
+        <methods>
+          <include name="resetApplicationState"/>
+          <include name="B_001"/>
+          <include name="deleteScreenShot"/>
+          <include name="a_SetUpAppium"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- TestCases.AuthenticationTest -->
+    </classes>
+  </test> <!-- Run devices 2(failed) -->
+</suite> <!-- Failed suite [MySuite] -->

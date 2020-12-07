@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MySuite" >
+		<parameter name="env" value="beta"></parameter>
+		<parameter name="loc" value="sg"></parameter>
+		<parameter name="udid" value="RR8M901GK6R"></parameter>
+		<parameter name="devicename" value="Galaxy A50s"></parameter>
+		<parameter name="port" value="4723"></parameter>
+		<parameter name="useremail" value="automation+android4@2359media.com"></parameter>
+		<parameter name="password" value="2359media"></parameter>
+		<parameter name="runningon" value="aws"></parameter>
+	  	<test name="Run devices 2" >
+		    <classes>
+		    	<class name="TestCases.LaunchWebTest">
+	    			<methods>
+	    				<include name="A_001"/>
+	    			</methods>
+	    		</class>
+	     		<class name="TestCases.TopNavigationTest">
+	    			<methods>
+	    				<include name="B_001"/>
+	    				<include name="B_002"/>
+	    				<include name="B_003"/>
+	    				<include name="B_004"/>
+	    			</methods>
+	    		</class>
+	    		<class name="TestCases.HomePageTest">
+	    			<methods>
+	    				<include name="C_001"/>
+	    				<include name="C_004"/>
+	    			</methods>
+	    		</class>
+	    		
+		    </classes>  
+	  </test>
+  
+</suite>

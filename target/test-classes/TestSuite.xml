@@ -11,82 +11,53 @@
 		<parameter name="runningon" value="aws"></parameter>
 	  	<test name="Run devices 2" >
 		    <classes>
-		    	
-	     		<class name="TestCases.AuthenticationTest">
+		    	<class name="TestCases.LaunchWebTest">
 	    			<methods>
-	    				<include name="Authentication_01"/>
-	    				<include name="Authentication_02"/>
-	    				<include name="Authentication_03"/>
-	    				<include name="Authentication_04"/>
+	    				<exclude name="A_001"/>
 	    			</methods>
 	    		</class>
-	    		<class name="TestCases.PlanTest">
+	     		<class name="TestCases.TopNavigationTest">
 	    			<methods>
-	    				<include name="login"/>
-	    				<include name="Plan_01"/>
-	    				<include name="Plan_02"/>
-	    				<include name="Plan_03"/>
-	    				<include name="Plan_05"/>
-	    				<include name="Plan_06"/>
-	    				<include name="Plan_07"/>
-	    				<include name="Plan_08"/>
-	    				<include name="Plan_09"/>
-	    				<include name="Plan_10"/>
-	    				<include name="Plan_11"/>
-	    				<include name="Plan_12"/>
+	    				<exclude name="B_001"/>
+	    				<exclude name="B_002"/>
+	    				<exclude name="B_003"/>
+	    				<exclude name="B_004"/>
 	    			</methods>
 	    		</class>
-	    		<class name="TestCases.PrayerTest">
+	    		<class name="TestCases.HomePageTest">
 	    			<methods>
-	    				<include name="login"/>
-	    				<include name="Prayer_01"/>
-	    				<include name="Prayer_02"/>
-	    				<include name="Prayer_03"/>
-	    				<include name="Prayer_04"/>
-	    				<include name="Prayer_05"/>
-	    				<include name="Prayer_06"/>
-	    				<include name="Prayer_07"/>
-	    				<include name="Prayer_08"/>
-	    				<include name="Prayer_09"/>
-	    				<include name="Prayer_10"/>
+	    				<exclude name="C_001"/>
+	    				<exclude name="C_004"/>
+	    				<exclude name="C_005"/>
+	    				<exclude name="C_006"/>
+	    				<exclude name="C_007"/>
+	    				<exclude name="C_009"/>
 	    			</methods>
 	    		</class>
-	    		<class name="TestCases.MoreTest">
+	    		<class name="TestCases.SearchTest">
 	    			<methods>
-	    				<include name="login"/>
-	    				<include name="More_01"/>
-	    				<include name="More_02"/>
-	    				<include name="More_03"/>
-	    				<include name="More_04"/>
-	    				<include name="More_05"/>
-	    				<include name="More_06"/>
-	    				<include name="More_07"/>
-	    				<include name="More_08"/>
-	    				<include name="More_09"/>
-	    				<include name="More_10"/>
-	    				<include name="More_11"/>
-	    				<include name="More_12"/>
-	    				<include name="More_13"/>
-	    				<include name="More_14"/>
-	    				<include name="More_15"/>
-	    				<include name="More_16"/>
-	    				<include name="More_17"/>
-	    				<include name="More_18"/>
-	    				<include name="More_19"/>
-	    				<include name="More_20"/>
+	    				<exclude name="D_001"/>
+	    				<exclude name="D_002"/>
+	    				<exclude name="D_003"/>
+	    				<exclude name="D_004"/>
 	    			</methods>
 	    		</class>
-	    		<class name="TestCases.ProfileTest">
+	    		
+	    		<class name="TestCases.SideMenuTest">
 	    			<methods>
-	    				<include name="login"/>
-	    				<include name="Profile_01"/>
-	    				<include name="Profile_02"/>
-	    				<include name="Profile_03"/>
-	    				<include name="Profile_04"/>
-	    				<include name="Profile_05"/>
-	    				<include name="Profile_06"/>
-	    				<include name="Profile_07"/>
-	    				
+	    				<exclude name="E_002"/>
+	    				<exclude name="E_003"/>
+	    				<exclude name="E_004"/>
+	    				<exclude name="E_005"/>
+	    				<exclude name="E_006"/>
+	    				<exclude name="E_008"/>
+	    				<exclude name="E_009"/>
+	    			</methods>
+	    		</class>
+	    		
+	    		<class name="TestCases.ScheduleTest">
+	    			<methods>
+	    				<include name="F_002"/>
 	    			</methods>
 	    		</class>
 		    </classes>  
