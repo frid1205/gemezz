@@ -1,6 +1,6 @@
 [RemoteTestNG] detected TestNG version 7.0.0
 Running on Galaxy A50s
-Dec 11, 2020 3:53:12 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+Dec 11, 2020 5:19:52 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFO: Detected dialect: W3C
 -----------=A_001=------------
 -> Verify page is in homescreen
@@ -31,8 +31,7 @@ hello guest text = 2059431100
 -----------=B_004=------------
 -> Tap on search icon
 -> Verify page is in search page
-Page is not displayed did not expect to find [true] but found [false]
---Fail--
+--Pass--
 -----------=C_001=------------
 -> Verify Home Page display
 -> Verify home page
@@ -49,7 +48,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'Potatos-Mac', ip: 'fe80:0:0:0:1068:486a:ca6f:4ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {BROWSER_NAME: Chrome, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., databaseEnabled: false, desired: {BROWSER_NAME: Chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., deviceName: Galaxy A50s, newCommandTimeout: 0, noReset: true, platformName: android, version: 10}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RR8M901GK6R, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RR8M901GK6R, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 78, takesScreenshot: true, version: 10, viewportRect: {height: 2053, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 14d4f9d7-8a68-4002-8e55-70544904a1ed
+Session ID: 2c4a2003-a015-4d35-ae28-3bfc09c48912
 ==> 0
 -> Verify URL is valid
 --Pass--
@@ -187,12 +186,10 @@ The following asserts failed:
 -> verify detail game page is displayed by URL
 -> Tap on side menu button
 -> Tap on schedule menu button
-Expected condition failed: waiting for visibility of [[io.appium.java_client.android.AndroidDriver, Capabilities: {BROWSER_NAME=Chrome, appActivity=com.google.android.apps.chrome.Main, appPackage=com.android.chrome, automationName=UiAutomator2, browserName=Chrome, chromeOptions={w3c=false}, chromedriverExecutable=/Users/fendyridwan/Documents/Project/gemezz3/driver/chromedriver_ver86_mac, databaseEnabled=false, desired={browserName=Chrome, platformName=android, BROWSER_NAME=Chrome, version=10, chromeOptions={w3c=false}, automationName=UiAutomator2, chromedriverExecutable=/Users/fendyridwan/Documents/Project/gemezz3/driver/chromedriver_ver86_mac, deviceName=Galaxy A50s, newCommandTimeout=0, noReset=true}, deviceApiLevel=29, deviceManufacturer=samsung, deviceModel=SM-A507FN, deviceName=RR8M901GK6R, deviceScreenDensity=420, deviceScreenSize=1080x2340, deviceUDID=RR8M901GK6R, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=0, noReset=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=10, statBarHeight=78, takesScreenshot=true, version=10, viewportRect={left=0, top=78, width=1080, height=2053}, warnings={}, webStorageEnabled=false}] -> xpath: //*[contains(text(),'Schedule') and contains(@href,'competitionschedule')]] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Potatos-Mac', ip: 'fe80:0:0:0:1068:486a:ca6f:4ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {BROWSER_NAME: Chrome, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., databaseEnabled: false, desired: {BROWSER_NAME: Chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., deviceName: Galaxy A50s, newCommandTimeout: 0, noReset: true, platformName: android, version: 10}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RR8M901GK6R, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RR8M901GK6R, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 78, takesScreenshot: true, version: 10, viewportRect: {height: 2053, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 14d4f9d7-8a68-4002-8e55-70544904a1ed
+-> Tap on finish tab button
+-> Verify load more button is working
+The following asserts failed:
+	load more button is not working properly did not expect to find [true] but found [false]
 --Fail--
 -----------=G_001=------------
 -> Access Winners List page
@@ -255,3 +252,9 @@ hello guest text = 20
 hello guest text = 2059431100
 -> Go to detail game page
 --Pass--
+
+===============================================
+MySuite
+Total tests run: 35, Passes: 28, Failures: 7, Skips: 0
+===============================================
+
