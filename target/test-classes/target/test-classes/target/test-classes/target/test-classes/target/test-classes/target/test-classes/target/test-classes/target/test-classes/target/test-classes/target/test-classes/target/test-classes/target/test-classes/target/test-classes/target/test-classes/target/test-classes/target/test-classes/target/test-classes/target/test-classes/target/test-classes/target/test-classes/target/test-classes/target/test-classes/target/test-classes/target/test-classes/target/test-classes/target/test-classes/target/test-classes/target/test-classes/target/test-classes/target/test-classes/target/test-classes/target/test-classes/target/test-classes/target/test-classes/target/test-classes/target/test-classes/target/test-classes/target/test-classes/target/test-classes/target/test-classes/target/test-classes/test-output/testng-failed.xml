@@ -11,101 +11,18 @@
   <parameter name="useremail" value="automation+android4@2359media.com"/>
   <test thread-count="5" name="Run devices 2(failed)">
     <classes>
-      <class name="TestCases.MoreTest">
+      <class name="TestCases.GameDetailTest">
         <methods>
-          <include name="More_12"/>
-          <include name="More_17"/>
-          <include name="a_SetUpAppium"/>
-          <include name="More_19"/>
-          <include name="More_18"/>
-          <include name="More_13"/>
-          <include name="More_15"/>
-          <include name="More_14"/>
-          <include name="More_16"/>
-          <include name="More_11"/>
-          <include name="More_10"/>
-          <include name="More_09"/>
-          <include name="More_01"/>
+          <include name="H_004"/>
+          <include name="H_003"/>
           <include name="resetApplicationState"/>
-          <include name="More_06"/>
-          <include name="login"/>
-          <include name="More_08"/>
-          <include name="More_07"/>
-          <include name="quitDriver"/>
-          <include name="More_02"/>
-          <include name="More_04"/>
-          <include name="More_03"/>
-          <include name="More_20"/>
-          <include name="More_05"/>
+          <include name="H_005"/>
           <include name="deleteScreenShot"/>
-        </methods>
-      </class> <!-- TestCases.MoreTest -->
-      <class name="TestCases.PrayerTest">
-        <methods>
-          <include name="Prayer_01"/>
-          <include name="Prayer_08"/>
-          <include name="Prayer_09"/>
-          <include name="resetApplicationState"/>
           <include name="a_SetUpAppium"/>
-          <include name="quitDriver"/>
-          <include name="login"/>
-          <include name="Prayer_10"/>
-          <include name="Prayer_06"/>
-          <include name="Prayer_04"/>
-          <include name="Prayer_07"/>
-          <include name="Prayer_02"/>
-          <include name="deleteScreenShot"/>
-          <include name="Prayer_05"/>
-          <include name="Prayer_03"/>
-        </methods>
-      </class> <!-- TestCases.PrayerTest -->
-      <class name="TestCases.ProfileTest">
-        <methods>
-          <include name="Profile_01"/>
-          <include name="Profile_03"/>
-          <include name="Profile_06"/>
-          <include name="resetApplicationState"/>
-          <include name="Profile_05"/>
-          <include name="deleteScreenShot"/>
-          <include name="Profile_02"/>
-          <include name="a_SetUpAppium"/>
-          <include name="Profile_07"/>
-          <include name="Profile_04"/>
-          <include name="login"/>
+          <include name="accessHomePage"/>
           <include name="quitDriver"/>
         </methods>
-      </class> <!-- TestCases.ProfileTest -->
-      <class name="TestCases.PlanTest">
-        <methods>
-          <include name="login"/>
-          <include name="resetApplicationState"/>
-          <include name="Plan_01"/>
-          <include name="Plan_12"/>
-          <include name="a_SetUpAppium"/>
-          <include name="quitDriver"/>
-          <include name="Plan_09"/>
-          <include name="Plan_10"/>
-          <include name="Plan_03"/>
-          <include name="Plan_02"/>
-          <include name="Plan_08"/>
-          <include name="deleteScreenShot"/>
-          <include name="Plan_07"/>
-          <include name="Plan_06"/>
-          <include name="Plan_05"/>
-        </methods>
-      </class> <!-- TestCases.PlanTest -->
-      <class name="TestCases.AuthenticationTest">
-        <methods>
-          <include name="Authentication_01"/>
-          <include name="resetApplicationState"/>
-          <include name="Authentication_02"/>
-          <include name="deleteScreenShot"/>
-          <include name="Authentication_03"/>
-          <include name="a_SetUpAppium"/>
-          <include name="Authentication_04"/>
-          <include name="quitDriver"/>
-        </methods>
-      </class> <!-- TestCases.AuthenticationTest -->
+      </class> <!-- TestCases.GameDetailTest -->
     </classes>
   </test> <!-- Run devices 2(failed) -->
 </suite> <!-- Failed suite [MySuite] -->

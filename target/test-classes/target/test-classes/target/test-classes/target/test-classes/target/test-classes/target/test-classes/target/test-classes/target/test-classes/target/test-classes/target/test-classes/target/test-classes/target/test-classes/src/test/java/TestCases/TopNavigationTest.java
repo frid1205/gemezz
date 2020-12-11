@@ -25,9 +25,11 @@ public class TopNavigationTest extends BaseSetting{
 	@Test
 	public void B_001() throws InterruptedException {
 		HomePage hp = PageFactory.initElements(driver, HomePage.class);
-		driver.get("http://ltc.la.gemezz.mobi");
-		Thread.sleep(10000);
+	
+		System.out.println("-> Side menu button if user not login");
 		System.out.println("-> Tap On side menu button");
+		hp.logoutIfUserLogin();
+		
 		hp.clickTribarButton();
 		
 		System.out.println("-> Verify side menu");
@@ -41,7 +43,7 @@ public class TopNavigationTest extends BaseSetting{
 		sa.assertTrue(hp.aboutIsExist(), "about is not exist");
 		sa.assertTrue(hp.csIsExist(), "customer support is not exist");
 		sa.assertTrue(hp.logoutButtonShouldnotExist(), "Logout button should not be exist, but its exist");
-		hp.logoutButton();
+		//hp.logoutButton();
 		sa.assertAll();
 		
 	}
@@ -53,6 +55,7 @@ public class TopNavigationTest extends BaseSetting{
 	@Test
 	public void B_002() throws InterruptedException {
 		HomePage hp = PageFactory.initElements(driver, HomePage.class);
+		System.out.println("-> Side menu button if user login");
 		System.out.println("-> Tap On side menu button");
 		
 		login();
@@ -65,7 +68,6 @@ public class TopNavigationTest extends BaseSetting{
 		sa.assertTrue(hp.scheduleIsExist(), "Schedulle button is not exist");
 		sa.assertTrue(hp.winnerListIsExist(), "winner list is not exist");
 		sa.assertTrue(hp.homePageButtonIsExist(), "home page button is not exist");
-		sa.assertTrue(hp.subcribeButtonIsExist(), "subscribe button is not exist");
 		sa.assertTrue(hp.chooseLanguageIsExist(), "language setting is not exist");
 		sa.assertTrue(hp.aboutIsExist(), "about is not exist");
 		sa.assertTrue(hp.csIsExist(), "customer support is not exist");

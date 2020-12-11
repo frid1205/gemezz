@@ -9,16 +9,84 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">MySuite</th></tr>
-<tr><td><a href="#t0">Run devices 2</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">62,496</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Run devices 2</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">111,095</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MySuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run devices 2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.AuthenticationTest</td><td><a href="#m0">B_001</a></td><td rowspan="1">1607234536214</td><td rowspan="1">25671</td></tr><tr><th colspan="4">Run devices 2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.HomePageTest</td><td><a href="#m1">C_001</a></td><td rowspan="1">1607234568706</td><td rowspan="1">21944</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MySuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run devices 2 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">TestCases.GameDetailTest</td><td><a href="#m0">resetApplicationState</a></td><td rowspan="1">1607666998689</td><td rowspan="1">155</td></tr><tr class="failedodd"><td rowspan="1">TestCases.LaunchWebTest</td><td><a href="#m1">quitDriver</a></td><td rowspan="1">1607666999065</td><td rowspan="1">21291</td></tr><tr><th colspan="4">Run devices 2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCases.GameDetailTest</td><td><a href="#m2">H_005</a></td><td rowspan="1">1607666998537</td><td rowspan="1">110</td></tr><tr><th colspan="4">Run devices 2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">TestCases.GameDetailTest</td><td><a href="#m3">H_003</a></td><td rowspan="1">1607666899190</td><td rowspan="1">35363</td></tr><tr class="passedeven"><td><a href="#m4">H_004</a></td><td rowspan="1">1607666948195</td><td rowspan="1">38783</td></tr></tbody>
 </table>
-<h2>Run devices 2</h2><h3 id="m0">TestCases.AuthenticationTest#B_001</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	text hello guest is not exist did not expect to find [true] but found [false],
-	Logout button should not be exist, but its exist did not expect to find [true] but found [false]
-	at TestCases.AuthenticationTest.B_001(AuthenticationTest.java:47)
+<h2>Run devices 2</h2><h3 id="m0">TestCases.GameDetailTest#resetApplicationState</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error finding if &apos;com.android.chrome&apos; is installed. Original error: Error executing adbExec. Original error: &apos;Command &apos;/Users/fendyridwan/Library/Android/sdk/platform-tools/adb -P 5037 -s RR8M901GK6R shell dumpsys package com.android.chrome&apos; exited with code 1&apos;; Stderr: &apos;adb: device &apos;RR8M901GK6R&apos; not found&apos;; Code: &apos;1&apos;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Potatos-Mac&apos;, ip: &apos;fe80:0:0:0:1068:486a:ca6f:4ce5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Chrome, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., databaseEnabled: false, desired: {BROWSER_NAME: Chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., deviceName: Galaxy A50s, newCommandTimeout: 0, noReset: true, platformName: android, version: 10}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RR8M901GK6R, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RR8M901GK6R, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 78, takesScreenshot: true, version: 10, viewportRect: {height: 2053, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3b7522eb-6b96-47c9-89ec-a2017a5b01b7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.InteractsWithApps.resetApp(InteractsWithApps.java:93)
+	at BaseSetting.BaseSetting.resetApplicationState(BaseSetting.java:221)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestCases.HomePageTest#C_001</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCases.LaunchWebTest#quitDriver</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;/Users/fendyridwan/Library/Android/sdk/platform-tools/adb -P 5037 -s RR8M901GK6R shell &apos;settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy&apos;&apos; exited with code 1&apos;; Stderr: &apos;adb: device &apos;RR8M901GK6R&apos; not found&apos;; Code: &apos;1&apos;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Potatos-Mac&apos;, ip: &apos;fe80:0:0:0:1068:486a:ca6f:4ce5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Chrome, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., databaseEnabled: false, desired: {BROWSER_NAME: Chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., deviceName: Galaxy A50s, newCommandTimeout: 0, noReset: true, platformName: android, version: 10}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RR8M901GK6R, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RR8M901GK6R, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 78, takesScreenshot: true, version: 10, viewportRect: {height: 2053, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3b7522eb-6b96-47c9-89ec-a2017a5b01b7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+	at BaseSetting.BaseSetting.quitDriver(BaseSetting.java:226)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCases.GameDetailTest#H_005</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: chrome not reachable
+  (Session info: chrome=86.0.4240.99)
+  (Driver info: chromedriver=86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}),platform=Mac OS X 10.15.6 x86_64)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Potatos-Mac&apos;, ip: &apos;fe80:0:0:0:1068:486a:ca6f:4ce5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Chrome, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., databaseEnabled: false, desired: {BROWSER_NAME: Chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., deviceName: Galaxy A50s, newCommandTimeout: 0, noReset: true, platformName: android, version: 10}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RR8M901GK6R, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RR8M901GK6R, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 78, takesScreenshot: true, version: 10, viewportRect: {height: 2053, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 3b7522eb-6b96-47c9-89ec-a2017a5b01b7
+*** Element info: {Using=xpath, value=//*[@id=&quot;st-container&quot;]/div[2]/div/div/div/div[3]/div[3]/a/img}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at BaseSetting.BaseSetting.scrollDownIntoElement(BaseSetting.java:155)
+	at Pages.HomePage.clickBanner3(HomePage.java:253)
+	at TestCases.GameDetailTest.H_005(GameDetailTest.java:112)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCases.GameDetailTest#H_003</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCases.GameDetailTest#H_004</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

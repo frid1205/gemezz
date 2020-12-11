@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-MySuite">
-              <span class="suite-name border-passed">MySuite</span>
+              <span class="suite-name border-failed">MySuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,51 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">35 methods, 7 failed,   28 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MySuite" class="hide-methods failed suite-MySuite"> (hide)</a> <!-- hide-methods failed suite-MySuite -->
+                      <a href="#" panel-name="suite-MySuite" class="show-methods failed suite-MySuite"> (show)</a> <!-- show-methods failed suite-MySuite -->
+                    </span>
+                    <div class="method-list-content failed suite-MySuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.TopNavigationTest" hash-for-method="B_001">B_001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.SearchTest" hash-for-method="D_003">D_003</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.SearchTest" hash-for-method="D_004">D_004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ScheduleTest" hash-for-method="F_002">F_002</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ScheduleTest" hash-for-method="F_003">F_003</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ScheduleTest" hash-for-method="F_004">F_004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.GameDetailTest" hash-for-method="H_001">H_001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MySuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +146,142 @@
                     <div class="method-list-content passed suite-MySuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ScheduleTest" hash-for-method="F_004">F_004</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.LaunchWebTest" hash-for-method="A_001">A_001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.TopNavigationTest" hash-for-method="B_002">B_002</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.TopNavigationTest" hash-for-method="B_003">B_003</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.TopNavigationTest" hash-for-method="B_004">B_004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.HomePageTest" hash-for-method="C_001">C_001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.HomePageTest" hash-for-method="C_004">C_004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.HomePageTest" hash-for-method="C_005">C_005</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.HomePageTest" hash-for-method="C_006">C_006</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.HomePageTest" hash-for-method="C_007">C_007</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.HomePageTest" hash-for-method="C_009">C_009</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.SearchTest" hash-for-method="D_001">D_001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.SearchTest" hash-for-method="D_002">D_002</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.SideMenuTest" hash-for-method="E_002">E_002</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.SideMenuTest" hash-for-method="E_003">E_003</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.SideMenuTest" hash-for-method="E_004">E_004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.SideMenuTest" hash-for-method="E_005">E_005</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.SideMenuTest" hash-for-method="E_006">E_006</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.SideMenuTest" hash-for-method="E_008">E_008</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.SideMenuTest" hash-for-method="E_009">E_009</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.ScheduleTest" hash-for-method="F_001">F_001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.WinnerListTest" hash-for-method="G_001">G_001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.WinnerListTest" hash-for-method="G_002">G_002</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.WinnerListTest" hash-for-method="G_003">G_003</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.GameDetailTest" hash-for-method="H_003">H_003</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.GameDetailTest" hash-for-method="H_004">H_004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.GameDetailTest" hash-for-method="H_005">H_005</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.GameDetailTest" hash-for-method="H_007">H_007</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.GameDetailTest" hash-for-method="H_008">H_008</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MySuite -->
@@ -117,6 +296,266 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MySuite" class="panel MySuite">
+          <div class="suite-MySuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.TopNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="B_001">
+                  </a> <!-- B_001 -->
+                  <span class="method-name">B_001</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	text hello guest is not exist, display text 20 and it automatically login without user will did not expect to find [true] but found [false]
+	at TestCases.TopNavigationTest.B_001(TopNavigationTest.java:55)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-failed -->
+          <div class="suite-MySuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.GameDetailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="H_001">
+                  </a> <!-- H_001 -->
+                  <span class="method-name">H_001</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Like button is not displayed did not expect to find [true] but found [false],
+	Share button is not displayed did not expect to find [true] but found [false],
+	leaderboard is not displayed did not expect to find [true] but found [false]
+	at TestCases.GameDetailTest.H_001(GameDetailTest.java:43)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-failed -->
+          <div class="suite-MySuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.ScheduleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="F_002">
+                  </a> <!-- F_002 -->
+                  <span class="method-name">F_002</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	load more button is not working properly did not expect to find [true] but found [false]
+	at TestCases.ScheduleTest.F_002(ScheduleTest.java:85)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="F_003">
+                  </a> <!-- F_003 -->
+                  <span class="method-name">F_003</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	load more button is not working properly did not expect to find [true] but found [false]
+	at TestCases.ScheduleTest.F_003(ScheduleTest.java:129)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="F_004">
+                  </a> <!-- F_004 -->
+                  <span class="method-name">F_004</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	load more button is not working properly did not expect to find [true] but found [false]
+	at TestCases.ScheduleTest.F_004(ScheduleTest.java:174)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-failed -->
+          <div class="suite-MySuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="D_003">
+                  </a> <!-- D_003 -->
+                  <span class="method-name">D_003</span>
+                  <div class="stack-trace">java.lang.AssertionError: text of no result found should not be displayed did not expect to find [true] but found [false]
+	at TestCases.SearchTest.D_003(SearchTest.java:85)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="D_004">
+                  </a> <!-- D_004 -->
+                  <span class="method-name">D_004</span>
+                  <div class="stack-trace">java.lang.AssertionError: text of no result found is not displayed displayed did not expect to find [true] but found [false]
+	at TestCases.SearchTest.D_004(SearchTest.java:110)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-failed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="C_001">
+                  </a> <!-- C_001 -->
+                  <span class="method-name">C_001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="C_004">
+                  </a> <!-- C_004 -->
+                  <span class="method-name">C_004</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="C_005">
+                  </a> <!-- C_005 -->
+                  <span class="method-name">C_005</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="C_006">
+                  </a> <!-- C_006 -->
+                  <span class="method-name">C_006</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="C_007">
+                  </a> <!-- C_007 -->
+                  <span class="method-name">C_007</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="C_009">
+                  </a> <!-- C_009 -->
+                  <span class="method-name">C_009</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.LaunchWebTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="A_001">
+                  </a> <!-- A_001 -->
+                  <span class="method-name">A_001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.TopNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="B_002">
+                  </a> <!-- B_002 -->
+                  <span class="method-name">B_002</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="B_003">
+                  </a> <!-- B_003 -->
+                  <span class="method-name">B_003</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="B_004">
+                  </a> <!-- B_004 -->
+                  <span class="method-name">B_004</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.GameDetailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="H_003">
+                  </a> <!-- H_003 -->
+                  <span class="method-name">H_003</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="H_004">
+                  </a> <!-- H_004 -->
+                  <span class="method-name">H_004</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="H_005">
+                  </a> <!-- H_005 -->
+                  <span class="method-name">H_005</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="H_007">
+                  </a> <!-- H_007 -->
+                  <span class="method-name">H_007</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="H_008">
+                  </a> <!-- H_008 -->
+                  <span class="method-name">H_008</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
           <div class="suite-MySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -125,9 +564,117 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="F_004">
-                  </a> <!-- F_004 -->
-                  <span class="method-name">F_004</span>
+                  <a name="F_001">
+                  </a> <!-- F_001 -->
+                  <span class="method-name">F_001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.SideMenuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="E_002">
+                  </a> <!-- E_002 -->
+                  <span class="method-name">E_002</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E_003">
+                  </a> <!-- E_003 -->
+                  <span class="method-name">E_003</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E_004">
+                  </a> <!-- E_004 -->
+                  <span class="method-name">E_004</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E_005">
+                  </a> <!-- E_005 -->
+                  <span class="method-name">E_005</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E_006">
+                  </a> <!-- E_006 -->
+                  <span class="method-name">E_006</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E_008">
+                  </a> <!-- E_008 -->
+                  <span class="method-name">E_008</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="E_009">
+                  </a> <!-- E_009 -->
+                  <span class="method-name">E_009</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.WinnerListTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="G_001">
+                  </a> <!-- G_001 -->
+                  <span class="method-name">G_001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="G_002">
+                  </a> <!-- G_002 -->
+                  <span class="method-name">G_002</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="G_003">
+                  </a> <!-- G_003 -->
+                  <span class="method-name">G_003</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="D_001">
+                  </a> <!-- D_001 -->
+                  <span class="method-name">D_001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="D_002">
+                  </a> <!-- D_002 -->
+                  <span class="method-name">D_002</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,66 +690,84 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;MySuite&quot;&gt;
   &lt;parameter name=&quot;loc&quot; value=&quot;sg&quot;/&gt;
-  &lt;parameter name=&quot;password&quot; value=&quot;2359media&quot;/&gt;
+  &lt;parameter name=&quot;password&quot; value=&quot;12345678&quot;/&gt;
   &lt;parameter name=&quot;port&quot; value=&quot;4723&quot;/&gt;
   &lt;parameter name=&quot;devicename&quot; value=&quot;Galaxy A50s&quot;/&gt;
   &lt;parameter name=&quot;env&quot; value=&quot;beta&quot;/&gt;
   &lt;parameter name=&quot;udid&quot; value=&quot;RR8M901GK6R&quot;/&gt;
-  &lt;parameter name=&quot;runningon&quot; value=&quot;aws&quot;/&gt;
-  &lt;parameter name=&quot;useremail&quot; value=&quot;automation+android4@2359media.com&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Run devices 2&quot;&gt;
+  &lt;parameter name=&quot;runningon&quot; value=&quot;realDevice&quot;/&gt;
+  &lt;parameter name=&quot;useremail&quot; value=&quot;fendy.ridwan@lumoshive.com&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression Test part 1&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestCases.LaunchWebTest&quot;&gt;
         &lt;methods&gt;
-          &lt;exclude name=&quot;A_001&quot;/&gt;
+          &lt;include name=&quot;A_001&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCases.LaunchWebTest --&gt;
       &lt;class name=&quot;TestCases.TopNavigationTest&quot;&gt;
         &lt;methods&gt;
-          &lt;exclude name=&quot;B_001&quot;/&gt;
-          &lt;exclude name=&quot;B_002&quot;/&gt;
-          &lt;exclude name=&quot;B_003&quot;/&gt;
-          &lt;exclude name=&quot;B_004&quot;/&gt;
+          &lt;include name=&quot;B_001&quot;/&gt;
+          &lt;include name=&quot;B_002&quot;/&gt;
+          &lt;include name=&quot;B_003&quot;/&gt;
+          &lt;include name=&quot;B_004&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCases.TopNavigationTest --&gt;
       &lt;class name=&quot;TestCases.HomePageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;exclude name=&quot;C_001&quot;/&gt;
-          &lt;exclude name=&quot;C_004&quot;/&gt;
-          &lt;exclude name=&quot;C_005&quot;/&gt;
-          &lt;exclude name=&quot;C_006&quot;/&gt;
-          &lt;exclude name=&quot;C_007&quot;/&gt;
-          &lt;exclude name=&quot;C_009&quot;/&gt;
+          &lt;include name=&quot;C_001&quot;/&gt;
+          &lt;include name=&quot;C_004&quot;/&gt;
+          &lt;include name=&quot;C_005&quot;/&gt;
+          &lt;include name=&quot;C_006&quot;/&gt;
+          &lt;include name=&quot;C_007&quot;/&gt;
+          &lt;include name=&quot;C_009&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCases.HomePageTest --&gt;
       &lt;class name=&quot;TestCases.SearchTest&quot;&gt;
         &lt;methods&gt;
-          &lt;exclude name=&quot;D_001&quot;/&gt;
-          &lt;exclude name=&quot;D_002&quot;/&gt;
-          &lt;exclude name=&quot;D_003&quot;/&gt;
-          &lt;exclude name=&quot;D_004&quot;/&gt;
+          &lt;include name=&quot;D_001&quot;/&gt;
+          &lt;include name=&quot;D_002&quot;/&gt;
+          &lt;include name=&quot;D_003&quot;/&gt;
+          &lt;include name=&quot;D_004&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCases.SearchTest --&gt;
       &lt;class name=&quot;TestCases.SideMenuTest&quot;&gt;
         &lt;methods&gt;
-          &lt;exclude name=&quot;E_002&quot;/&gt;
-          &lt;exclude name=&quot;E_003&quot;/&gt;
-          &lt;exclude name=&quot;E_004&quot;/&gt;
-          &lt;exclude name=&quot;E_005&quot;/&gt;
-          &lt;exclude name=&quot;E_006&quot;/&gt;
-          &lt;exclude name=&quot;E_008&quot;/&gt;
-          &lt;exclude name=&quot;E_009&quot;/&gt;
+          &lt;include name=&quot;E_002&quot;/&gt;
+          &lt;include name=&quot;E_003&quot;/&gt;
+          &lt;include name=&quot;E_004&quot;/&gt;
+          &lt;include name=&quot;E_005&quot;/&gt;
+          &lt;include name=&quot;E_006&quot;/&gt;
+          &lt;include name=&quot;E_008&quot;/&gt;
+          &lt;include name=&quot;E_009&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCases.SideMenuTest --&gt;
       &lt;class name=&quot;TestCases.ScheduleTest&quot;&gt;
         &lt;methods&gt;
+          &lt;include name=&quot;F_001&quot;/&gt;
+          &lt;include name=&quot;F_002&quot;/&gt;
+          &lt;include name=&quot;F_003&quot;/&gt;
           &lt;include name=&quot;F_004&quot;/&gt;
-          &lt;exclude name=&quot;F_002&quot;/&gt;
-          &lt;exclude name=&quot;F_003&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCases.ScheduleTest --&gt;
+      &lt;class name=&quot;TestCases.WinnerListTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;G_001&quot;/&gt;
+          &lt;include name=&quot;G_002&quot;/&gt;
+          &lt;include name=&quot;G_003&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.WinnerListTest --&gt;
+      &lt;class name=&quot;TestCases.GameDetailTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;H_001&quot;/&gt;
+          &lt;include name=&quot;H_003&quot;/&gt;
+          &lt;include name=&quot;H_004&quot;/&gt;
+          &lt;include name=&quot;H_005&quot;/&gt;
+          &lt;include name=&quot;H_007&quot;/&gt;
+          &lt;include name=&quot;H_008&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.GameDetailTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Run devices 2 --&gt;
+  &lt;/test&gt; &lt;!-- Regression Test part 1 --&gt;
 &lt;/suite&gt; &lt;!-- MySuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,7 +779,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Run devices 2 (6 classes)</span>
+                <span class="test-name">Regression Test part 1 (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -240,16 +805,152 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(35);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'F_004')
 data.setCell(0, 2, 'TestCases.ScheduleTest')
-data.setCell(0, 3, 47696);
+data.setCell(0, 3, 87076);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'E_006')
+data.setCell(1, 2, 'TestCases.SideMenuTest')
+data.setCell(1, 3, 74493);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'E_005')
+data.setCell(2, 2, 'TestCases.SideMenuTest')
+data.setCell(2, 3, 74306);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'H_007')
+data.setCell(3, 2, 'TestCases.GameDetailTest')
+data.setCell(3, 3, 67582);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'C_007')
+data.setCell(4, 2, 'TestCases.HomePageTest')
+data.setCell(4, 3, 42516);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'B_001')
+data.setCell(5, 2, 'TestCases.TopNavigationTest')
+data.setCell(5, 3, 41234);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'B_002')
+data.setCell(6, 2, 'TestCases.TopNavigationTest')
+data.setCell(6, 3, 39184);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'H_008')
+data.setCell(7, 2, 'TestCases.GameDetailTest')
+data.setCell(7, 3, 38186);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'F_003')
+data.setCell(8, 2, 'TestCases.ScheduleTest')
+data.setCell(8, 3, 37739);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'F_002')
+data.setCell(9, 2, 'TestCases.ScheduleTest')
+data.setCell(9, 3, 35954);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'G_003')
+data.setCell(10, 2, 'TestCases.WinnerListTest')
+data.setCell(10, 3, 33325);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'G_002')
+data.setCell(11, 2, 'TestCases.WinnerListTest')
+data.setCell(11, 3, 24081);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'H_001')
+data.setCell(12, 2, 'TestCases.GameDetailTest')
+data.setCell(12, 3, 22950);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'H_003')
+data.setCell(13, 2, 'TestCases.GameDetailTest')
+data.setCell(13, 3, 22179);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'E_004')
+data.setCell(14, 2, 'TestCases.SideMenuTest')
+data.setCell(14, 3, 21471);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'C_005')
+data.setCell(15, 2, 'TestCases.HomePageTest')
+data.setCell(15, 3, 20587);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'E_003')
+data.setCell(16, 2, 'TestCases.SideMenuTest')
+data.setCell(16, 3, 20433);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'G_001')
+data.setCell(17, 2, 'TestCases.WinnerListTest')
+data.setCell(17, 3, 20423);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'F_001')
+data.setCell(18, 2, 'TestCases.ScheduleTest')
+data.setCell(18, 3, 18127);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'H_004')
+data.setCell(19, 2, 'TestCases.GameDetailTest')
+data.setCell(19, 3, 18083);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'E_002')
+data.setCell(20, 2, 'TestCases.SideMenuTest')
+data.setCell(20, 3, 16650);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'D_003')
+data.setCell(21, 2, 'TestCases.SearchTest')
+data.setCell(21, 3, 15052);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'H_005')
+data.setCell(22, 2, 'TestCases.GameDetailTest')
+data.setCell(22, 3, 14697);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'D_002')
+data.setCell(23, 2, 'TestCases.SearchTest')
+data.setCell(23, 3, 13677);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'E_008')
+data.setCell(24, 2, 'TestCases.SideMenuTest')
+data.setCell(24, 3, 12787);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'E_009')
+data.setCell(25, 2, 'TestCases.SideMenuTest')
+data.setCell(25, 3, 12514);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'D_001')
+data.setCell(26, 2, 'TestCases.SearchTest')
+data.setCell(26, 3, 11497);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'D_004')
+data.setCell(27, 2, 'TestCases.SearchTest')
+data.setCell(27, 3, 11195);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'C_001')
+data.setCell(28, 2, 'TestCases.HomePageTest')
+data.setCell(28, 3, 11093);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'B_003')
+data.setCell(29, 2, 'TestCases.TopNavigationTest')
+data.setCell(29, 3, 10727);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'B_004')
+data.setCell(30, 2, 'TestCases.TopNavigationTest')
+data.setCell(30, 3, 8146);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'C_009')
+data.setCell(31, 2, 'TestCases.HomePageTest')
+data.setCell(31, 3, 3211);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'C_004')
+data.setCell(32, 2, 'TestCases.HomePageTest')
+data.setCell(32, 3, 3177);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'C_006')
+data.setCell(33, 2, 'TestCases.HomePageTest')
+data.setCell(33, 3, 2277);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'A_001')
+data.setCell(34, 2, 'TestCases.LaunchWebTest')
+data.setCell(34, 3, 1887);
 window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 15 minutes</span>
               <div id="times-div-MySuite">
               </div> <!-- times-div-MySuite -->
             </div> <!-- times-div -->
@@ -264,43 +965,12 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-MySuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">40 ignored methods</span>
+            <span class="header-content">21 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.SideMenuTest</span>
+              <span class="ignored-class-name">TestCases.HomePageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">E_008</span>
-                <br/>
-                <span class="ignored-method-name">E_003</span>
-                <br/>
-                <span class="ignored-method-name">E_002</span>
-                <br/>
-                <span class="ignored-method-name">E_005</span>
-                <br/>
-                <span class="ignored-method-name">E_006</span>
-                <br/>
-                <span class="ignored-method-name">E_009</span>
-                <br/>
-                <span class="ignored-method-name">E_004</span>
-                <br/>
-                <span class="ignored-method-name">deleteScreenShot</span>
-                <br/>
-                <span class="ignored-method-name">a_SetUpAppium</span>
-                <br/>
-                <span class="ignored-method-name">quitDriver</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.ScheduleTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">F_002</span>
-                <br/>
-                <span class="ignored-method-name">F_001</span>
-                <br/>
-                <span class="ignored-method-name">F_003</span>
-                <br/>
                 <span class="ignored-method-name">deleteScreenShot</span>
                 <br/>
                 <span class="ignored-method-name">a_SetUpAppium</span>
@@ -312,17 +982,42 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCases.TopNavigationTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">B_002</span>
-                <br/>
                 <span class="ignored-method-name">deleteScreenShot</span>
                 <br/>
                 <span class="ignored-method-name">a_SetUpAppium</span>
                 <br/>
-                <span class="ignored-method-name">B_003</span>
+                <span class="ignored-method-name">quitDriver</span>
                 <br/>
-                <span class="ignored-method-name">B_004</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.GameDetailTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">deleteScreenShot</span>
                 <br/>
-                <span class="ignored-method-name">B_001</span>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.ScheduleTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.SideMenuTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
                 <br/>
                 <span class="ignored-method-name">quitDriver</span>
                 <br/>
@@ -331,49 +1026,22 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCases.SearchTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">D_003</span>
-                <br/>
-                <span class="ignored-method-name">D_002</span>
-                <br/>
-                <span class="ignored-method-name">D_001</span>
-                <br/>
                 <span class="ignored-method-name">deleteScreenShot</span>
                 <br/>
                 <span class="ignored-method-name">a_SetUpAppium</span>
-                <br/>
-                <span class="ignored-method-name">D_004</span>
                 <br/>
                 <span class="ignored-method-name">quitDriver</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.HomePageTest</span>
+              <span class="ignored-class-name">TestCases.WinnerListTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">C_004</span>
-                <br/>
-                <span class="ignored-method-name">C_007</span>
-                <br/>
-                <span class="ignored-method-name">C_005</span>
-                <br/>
-                <span class="ignored-method-name">C_009</span>
-                <br/>
                 <span class="ignored-method-name">deleteScreenShot</span>
                 <br/>
                 <span class="ignored-method-name">a_SetUpAppium</span>
                 <br/>
-                <span class="ignored-method-name">C_006</span>
-                <br/>
                 <span class="ignored-method-name">quitDriver</span>
-                <br/>
-                <span class="ignored-method-name">C_001</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.LaunchWebTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">A_001</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -387,34 +1055,366 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.LaunchWebTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">a_SetUpAppium(beta, sg, 4723, RR8M901GK6R, Galaxy A50s, aws)</span>
+                <span class="method-name">a_SetUpAppium(beta, sg, 4723, RR8M901GK6R, Galaxy A50s, realDevice)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">deleteScreenShot</span>
-                <span class="method-start">23401 ms</span>
+                <span class="method-start">18533 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">18563 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">A_001</span>
+                <span class="method-start">29319 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">31209 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.TopNavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">35398 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">B_001</span>
+                <span class="method-start">46154 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">88789 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">B_002</span>
+                <span class="method-start">99507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">138695 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">B_003</span>
+                <span class="method-start">149603 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">160333 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">B_004</span>
+                <span class="method-start">171481 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">179628 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">183863 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">C_001</span>
+                <span class="method-start">194650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">205746 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">C_004</span>
+                <span class="method-start">216628 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">219807 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">C_005</span>
+                <span class="method-start">230866 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">251454 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">C_006</span>
+                <span class="method-start">261982 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">264262 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">C_007</span>
+                <span class="method-start">275183 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">317702 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">C_009</span>
+                <span class="method-start">328399 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">331613 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.SearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">336583 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">D_001</span>
+                <span class="method-start">347353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">358851 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">D_002</span>
+                <span class="method-start">369598 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">383277 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">D_003</span>
+                <span class="method-start">393922 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">409795 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">D_004</span>
+                <span class="method-start">420384 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">432361 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.SideMenuTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">437149 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E_002</span>
+                <span class="method-start">447764 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">464418 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E_003</span>
+                <span class="method-start">475332 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">495766 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E_004</span>
+                <span class="method-start">507419 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">528892 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E_005</span>
+                <span class="method-start">539556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">613864 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E_006</span>
+                <span class="method-start">624834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">699330 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E_008</span>
+                <span class="method-start">710378 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">723166 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">E_009</span>
+                <span class="method-start">733785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">746300 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.ScheduleTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">accessHomePage</span>
-                <span class="method-start">23442 ms</span>
+                <span class="method-start">750902 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">F_001</span>
+                <span class="method-start">761620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">779749 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">F_002</span>
+                <span class="method-start">790440 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">827512 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">F_003</span>
+                <span class="method-start">838116 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">877027 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">F_004</span>
-                <span class="method-start">34151 ms</span>
+                <span class="method-start">887539 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">resetApplicationState</span>
-                <span class="method-start">81860 ms</span>
+                <span class="method-start">975734 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.WinnerListTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">980041 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">G_001</span>
+                <span class="method-start">990740 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">1011165 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">G_002</span>
+                <span class="method-start">1021815 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">1045897 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">G_003</span>
+                <span class="method-start">1056571 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">1089897 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.GameDetailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">1093870 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">H_001</span>
+                <span class="method-start">1104649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">1128608 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">H_003</span>
+                <span class="method-start">1139364 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">1161545 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">H_004</span>
+                <span class="method-start">1172515 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">1190600 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">H_005</span>
+                <span class="method-start">1201311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">1216011 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">H_007</span>
+                <span class="method-start">1226819 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">1294403 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">H_008</span>
+                <span class="method-start">1305018 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">resetApplicationState</span>
+                <span class="method-start">1343206 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.LaunchWebTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">87183 ms</span>
+                <span class="method-start">1349703 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

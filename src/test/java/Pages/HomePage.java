@@ -18,11 +18,15 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.sun.javafx.geom.Rectangle;
+
 import BaseSetting.BaseSetting;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.touch.offset.PointOption;
 
 /**
  * @author fendyridwan
@@ -37,7 +41,7 @@ public class HomePage extends BaseSetting{
 		this.driver = driver;
 	}
 
-	@FindBy(how = How.XPATH, using = "//div[@id=\"st-trigger-effects\"]/button")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"st-trigger-effects\"]/button")
 	@CacheLookup
 	WebElement tribarButton;
 	
@@ -60,6 +64,10 @@ public class HomePage extends BaseSetting{
 	@FindBy(how = How.XPATH, using = "//*[contains(text(),'Schedule') and contains(@href,'competitionschedule')]")
 	@CacheLookup
 	WebElement schedule;
+	
+	@FindBy(how = How.XPATH, using = "//*[contains(text(),'Schedule') and contains(@href,'competitionschedule')]")
+	@CacheLookup
+	WebElement scheduleBac;
 	
 	@FindBy(how = How.XPATH, using = "//*[contains(text(),'Schedule') and contains(@href,'competitionschedule')]")
 	@CacheLookup
@@ -100,6 +108,11 @@ public class HomePage extends BaseSetting{
 	@FindBy(how = How.XPATH, using = "//*[contains(text(),'Logout') and contains(@href,'http://ltc.la.gemezz.mobi/index.php/mobile/login/logout')]")
 	@CacheLookup
 	List<WebElement> logoutButton1;
+	
+	
+	@FindBy(how = How.XPATH, using = "//div[@id=\"msisdn_input\"]")
+	@CacheLookup
+	List<WebElement> msisdnIsExist;
 	
 	@FindBy(how = How.XPATH, using = "//input[@id=\"msisdn_tel\"]")
 	@CacheLookup
@@ -145,7 +158,7 @@ public class HomePage extends BaseSetting{
 	@CacheLookup
 	WebElement carrouselRightButton;
 	
-	@FindBy(how = How.XPATH, using = "//*[contains(text(),\"Play now and Win\")]")
+	@FindBy(how = How.XPATH, using = "//*[@id=\"st-container\"]/div[2]/div/div/div/div[2]/div/div/div/div[1]/div/div[4]/div/div[1]/a")
 	@CacheLookup
 	WebElement playNowAndWinButton;
 	
@@ -220,29 +233,8 @@ public class HomePage extends BaseSetting{
 	public void clickTribarButton() throws InterruptedException
 	{
 		Thread.sleep(3000);
-		//98,356
-		/*
-		Point x = driver.findElement(MobileBy.xpath("//*[@id=\"st-trigger-effects\"]/button")).getLocation();
-		System.out.println("--"+x.getX());
-		System.out.println("--"+x.getY());
-		System.out.println(driver.findElement(By.xpath("//*[@id=\"st-trigger-effects\"]/button")).getLocation().x);
-		System.out.println(driver.findElement(By.xpath("//*[@id=\"st-trigger-effects\"]/button/i")).getLocation().y);
-		System.out.println(driver.findElement(By.xpath("//*[@id=\"st-trigger-effects\"]/button/i")).getLocation().getX());
-		System.out.println(driver.findElement(By.xpath("//*[@id=\"st-trigger-effects\"]/button/i")).getLocation().getY());
-		
-		System.out.println("get width " +driver.findElement(MobileBy.xpath("//*[@id=\"st-trigger-effects\"]/button/i")).getSize().getWidth());
-		System.out.println("get height " +driver.findElement(MobileBy.xpath("//*[@id=\"st-trigger-effects\"]/button/i")).getSize().getHeight());
-
-		//1005,343
-		System.out.println(driver.findElement(By.xpath("//*[@id=\"st-container\"]/div[2]/div/div/div/div[1]/div[3]/a/i")).getLocation().getX());
-		System.out.println(driver.findElement(By.xpath("//*[@id=\"st-container\"]/div[2]/div/div/div/div[1]/div[3]/a/i")).getLocation().getY());
-		
-		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(tribarButton)).click();*/
 		//70,310
-		tap(70,310);
-		//TouchAction action = new TouchAction(driver);
-		//t = new TouchAction((PerformsTouchActions) driver);
-  	  	
+		tap(70,370);
 		Thread.sleep(1000);
 	}
 	
@@ -250,6 +242,7 @@ public class HomePage extends BaseSetting{
 	{
 		scrollDownIntoElement("//*[@id=\"st-container\"]/div[2]/div/div/div/div[3]/div[1]/a/img");
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(banner1)).click();
+		Thread.sleep(6000);
 	}
 	
 	public void clickBanner2() throws InterruptedException
@@ -262,6 +255,7 @@ public class HomePage extends BaseSetting{
 	{
 		scrollDownIntoElement("//*[@id=\"st-container\"]/div[2]/div/div/div/div[3]/div[3]/a/img");
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(banner3)).click();
+		Thread.sleep(6000);
 	}
 	
 	public boolean assertURL() {
@@ -287,9 +281,24 @@ public class HomePage extends BaseSetting{
 		}
 	}
 	
+	public boolean verifySessionIsLoginWithoutUserWill(String GuestName) {
+		if(!helloGuestText1.isEmpty()) {
+			System.out.println("hello guest text = "+helloGuestText.getText());
+			if((new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(helloGuestText)).getText().contains("20")) {
+				return false;
+			}else {
+				return true;
+			}
+		}
+		else {
+			return false;
+		}
+	}
+	
 	public void clickLogo() throws InterruptedException
 	{
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(logo)).click();
+		Thread.sleep(7000);
 		
 	}
 	
@@ -301,7 +310,25 @@ public class HomePage extends BaseSetting{
 	
 	public void clickSchedule() throws InterruptedException
 	{
-		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(schedule)).click();
+		int i = 1;
+		int x = 370;
+		while(i<=2) {
+			try {
+				(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(schedule)).click();
+				Thread.sleep(7000);
+				i=3;
+			}catch(Exception e) {
+				tap(70,x=x-1);
+				i=1;
+			}
+		}	
+		
+		
+	}
+	
+	public void clickSchedule2() throws InterruptedException
+	{
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(scheduleBac)).click();
 		Thread.sleep(7000);
 		
 	}
@@ -322,6 +349,7 @@ public class HomePage extends BaseSetting{
 	public void clickWinnerList() throws InterruptedException
 	{
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(winnerList)).click();
+		Thread.sleep(8000);
 		
 	}
 	
@@ -380,6 +408,15 @@ public class HomePage extends BaseSetting{
 			}else {
 				return false;
 			}
+		}
+		else {
+			return false;
+		}
+	}
+	
+	public boolean verifyMsisdnIsExistOrNot() {
+		if(!msisdnIsExist.isEmpty()){
+			return true;
 		}
 		else {
 			return false;
@@ -522,7 +559,20 @@ public class HomePage extends BaseSetting{
 	
 	public void clickPlayNowAndWinButton() throws InterruptedException
 	{
-		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(playNowAndWinButton)).click();
+		int i=0;
+		while(i<10) {
+			try {
+				
+				(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(playNowAndWinButton)).click();
+				
+				i=10;
+			}catch(Exception e) {
+				System.out.println("erro message : "+e);
+				System.out.println("==> "+i);
+				i++;
+			}
+		}
+		
 		
 	}
 	
@@ -651,7 +701,7 @@ public class HomePage extends BaseSetting{
 	
 	public void clickThumbnailCard() throws InterruptedException
 	{
-		scrollDownIntoElement("/div[@class=\"game-section-group thumbnail-slider\"] //h3[@class=\"game-group-title\" and contains(text(),\"Card\")]");
+		scrollDownIntoElement("//div[@class=\"game-section-group thumbnail-slider\"] //h3[@class=\"game-group-title\" and contains(text(),\"Card\")]");
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(itemBanner)).click();
 		
 	}

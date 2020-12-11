@@ -10,28 +10,31 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
 import com.google.common.collect.ImmutableMap;
-
-import Pages.LandingPage;
-import Pages.LoginPage;
-import Pages.MyPlanPage;
-import Pages.PlanPage;
+import io.appium.java_client.touch.LongPressOptions;
+import Pages.HomePage;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.offset.PointOption;
 
@@ -40,9 +43,11 @@ public class BaseSetting {
     public static DesiredCapabilities capabilities;
 	public static URL url;
 	
-	public static AndroidDriver<MobileElement> driver;
+	public static AndroidDriver<WebElement> driver;
+	public static WebDriver driver1;
 	public static WebElement element;
 	public static TouchAction t;
+	public static Dimension size;
     public static SoftAssert sa;
     
     @BeforeSuite
@@ -91,55 +96,58 @@ public class BaseSetting {
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 		capabilities.setCapability("BROWSER_NAME","Chrome");
 		
-		driver = new AndroidDriver<MobileElement>(url, capabilities);
+		driver = new AndroidDriver<WebElement>(url, capabilities);
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.resetApp();
 		
 	}
     
-    public void signIn() throws InterruptedException {
-    	LoginPage lp = PageFactory.initElements(driver, LoginPage.class);
-    	LandingPage ld = PageFactory.initElements(driver, LandingPage.class);
-    	
-    	ld.clickLoginButton();
-		lp.login("wesley02@yopmail.com", "12345678");
+    @BeforeMethod
+    public void accessHomePage() throws InterruptedException {
+    	driver.get("http://ltc.la.gemezz.mobi");
+		Thread.sleep(10000);
+		//driver.get("http://jazz.slypee.pk");
     }
     
-    public void tap(int x, int y) {
-    	/*
-    	WebElement el1 = driver.findElementByXPath("");
+    public void login() throws InterruptedException {
+    	System.out.println("-> login");
+    	Thread.sleep(5000);
     	
-    	  TouchAction action = new TouchAction(driver);
-    	  action.press(el0).moveTo(el1).release();
-    	  
-    	WebElement el0 = driver.findElement(By.xpath("//div[@id=\"st-trigger-effects\"]/button"));
-
-    	 AndroidTouchAction touch = new AndroidTouchAction (driver);
-    	  touch.tap (TapOptions.tapOptions ()
-    	      .withElement (ElementOption.element(el0)))
-    	    .perform ();
-    	size = driver.manage().window().getSize();
-    	System.out.println("size - "+size);
-    	System.out.println("height - "+size.getHeight());
-    	System.out.println("width - "+size.getWidth());
-    	*/
+    	HomePage hp = PageFactory.initElements(driver, HomePage.class);
+    	
+    	hp.clickTribarButton();
+    	
+    	if(hp.verifyUserIsLoginOrNo()==true) {
+    		hp.logoutButton();
+    		Thread.sleep(6000);
+    		hp.clickTribarButton();
+    	}
+    	
+    	hp.clickSubcribeButton();
+    	
+    	hp.typeMsisdn();
+    	hp.submitMsisdn();
+    	Thread.sleep(3000);
+    	
+    	hp.typePin();
+    	hp.submitPin();
+    	Thread.sleep(10000);
+    	
+    }
+    
+    
+    public void tap(int x, int y) {
     	//70,310
     	TouchAction action = new TouchAction(driver);
     	action.press(PointOption.point(x,y)) // x and y is the co-ordinate where you want to click.
     	.release()
     	.perform();
     	
-
-    	/*
-    	WebElement expandList = 
-    		       driver.findElementByXPath("//div[@id=\"st-trigger-effects\"]/button");
-    	//new Actions(driver).clickAndHold(expandList).perform();
-    		    TouchActions t = new TouchActions(driver);
-    		    t.singleTap(expandList);
-    		    t.perform();
-    	*/
-    	
+    }
+    
+    public void BackButton() {
+    	((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
     }
     
     public void scrollDownIntoElement(String el) {
@@ -151,42 +159,17 @@ public class BaseSetting {
         js.executeScript("arguments[0].scrollIntoView();", Element);
     }
     
+    
+    
+    
     public void hidekeyboard() {
     	driver.hideKeyboard();
     }
     
     public void backButton() {
+    	System.out.println("kesel");
     	driver.navigate().back();
-    }
-    
-    public void cleanMyPlan() throws InterruptedException {
-    	PlanPage pp = PageFactory.initElements(driver, PlanPage.class);
-    	MyPlanPage mpp = PageFactory.initElements(driver, MyPlanPage.class);
-    	boolean doEmptyPlan = true;
-    	System.out.println("start clean = "+(pp.emptyPlanIsExist()));
-		if(pp.emptyPlanIsExist() == true) {
-			
-			while(doEmptyPlan == true) {
-				pp.clickContentMyPlan();
-				scrollAndClick("Stop");
-				mpp.clickYesAndroidButton();
-			
-				mpp.clickBackButton();
-				System.out.println("end clean = "+doEmptyPlan+"-"+pp.emptyPlanIsExist());
-				Thread.sleep(3000);
-				if(pp.emptyPlanIsExist()==false) {
-					doEmptyPlan = true;
-					System.out.println("Still cleaning");
-				}else {
-					doEmptyPlan = false;
-					System.out.println("oke clean plan is done");
-				}
-				
-			}
-		}else {
-			System.out.println("has cleared");
-		}
-		System.out.println("clean success");
+    	((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.HOME));
     }
     
   //get driver of this class for screenshot
@@ -220,6 +203,20 @@ public class BaseSetting {
     public long getCurrentTime() {
     	return System.currentTimeMillis();
     }
+    
+    public String getURL() {
+		String getURL = driver.getCurrentUrl();
+		return getURL;
+	}
+	
+	public boolean verifyURLisvalid(String url) {
+		
+		if(getURL().contains(url)) {
+			return true;
+		}else {
+			return false;
+		}
+	}
        
     @AfterClass
   	public void resetApplicationState() throws InterruptedException {

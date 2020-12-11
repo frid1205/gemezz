@@ -3,6 +3,7 @@
  */
 package TestCases;
 
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -23,10 +24,12 @@ public class TopNavigationTest extends BaseSetting{
 	 */
 	@Test
 	public void B_001() throws InterruptedException {
-		HomePage hp = new HomePage(driver);
-		driver.get("http://ltc.la.gemezz.mobi");
-		Thread.sleep(10000);
+		HomePage hp = PageFactory.initElements(driver, HomePage.class);
+	
+		System.out.println("-> Side menu button if user not login");
 		System.out.println("-> Tap On side menu button");
+		hp.logoutIfUserLogin();
+		
 		hp.clickTribarButton();
 		
 		System.out.println("-> Verify side menu");
@@ -40,7 +43,7 @@ public class TopNavigationTest extends BaseSetting{
 		sa.assertTrue(hp.aboutIsExist(), "about is not exist");
 		sa.assertTrue(hp.csIsExist(), "customer support is not exist");
 		sa.assertTrue(hp.logoutButtonShouldnotExist(), "Logout button should not be exist, but its exist");
-		hp.logoutButton();
+		//hp.logoutButton();
 		sa.assertAll();
 		
 	}
@@ -51,7 +54,8 @@ public class TopNavigationTest extends BaseSetting{
 	 */
 	@Test
 	public void B_002() throws InterruptedException {
-		HomePage hp = new HomePage(driver);
+		HomePage hp = PageFactory.initElements(driver, HomePage.class);
+		System.out.println("-> Side menu button if user login");
 		System.out.println("-> Tap On side menu button");
 		
 		login();
@@ -64,7 +68,6 @@ public class TopNavigationTest extends BaseSetting{
 		sa.assertTrue(hp.scheduleIsExist(), "Schedulle button is not exist");
 		sa.assertTrue(hp.winnerListIsExist(), "winner list is not exist");
 		sa.assertTrue(hp.homePageButtonIsExist(), "home page button is not exist");
-		sa.assertTrue(hp.subcribeButtonIsExist(), "subscribe button is not exist");
 		sa.assertTrue(hp.chooseLanguageIsExist(), "language setting is not exist");
 		sa.assertTrue(hp.aboutIsExist(), "about is not exist");
 		sa.assertTrue(hp.csIsExist(), "customer support is not exist");
@@ -78,7 +81,7 @@ public class TopNavigationTest extends BaseSetting{
 	 */
 	@Test
 	public void B_003() throws InterruptedException {
-		HomePage hp = new HomePage(driver);
+		HomePage hp = PageFactory.initElements(driver, HomePage.class);
 		
 		System.out.println("-> Tap on logo");
 		hp.clickLogo();
@@ -94,8 +97,8 @@ public class TopNavigationTest extends BaseSetting{
 	 */
 	@Test
 	public void B_004() throws InterruptedException {
-		HomePage hp = new HomePage(driver);
-		searchPage sp = new searchPage(driver);
+		HomePage hp = PageFactory.initElements(driver, HomePage.class);
+		searchPage sp = PageFactory.initElements(driver, searchPage.class);
 		
 		System.out.println("-> Tap on search icon");
 		hp.clickSearch();

@@ -3,25 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.PlanTest">
+      <class name="TestCases.TopNavigationTest">
         <methods>
-          <include name="login"/>
-          <include name="Plan_01"/>
-          <include name="Plan_12"/>
+          <include name="B_002"/>
+          <include name="resetApplicationState"/>
+          <include name="deleteScreenShot"/>
+          <include name="B_003"/>
           <include name="a_SetUpAppium"/>
+          <include name="B_004"/>
+          <include name="accessHomePage"/>
+          <include name="B_001"/>
           <include name="quitDriver"/>
-          <include name="Plan_09"/>
-          <include name="Plan_11"/>
-          <include name="Plan_10"/>
-          <include name="Plan_04"/>
-          <include name="Plan_03"/>
-          <include name="Plan_02"/>
-          <include name="Plan_08"/>
-          <include name="Plan_07"/>
-          <include name="Plan_06"/>
-          <include name="Plan_05"/>
         </methods>
-      </class> <!-- TestCases.PlanTest -->
+      </class> <!-- TestCases.TopNavigationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

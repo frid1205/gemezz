@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-MySuite">
-              <span class="suite-name border-failed">MySuite</span>
+              <span class="suite-name border-passed">MySuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-MySuite" class="hide-methods failed suite-MySuite"> (hide)</a> <!-- hide-methods failed suite-MySuite -->
-                      <a href="#" panel-name="suite-MySuite" class="show-methods failed suite-MySuite"> (show)</a> <!-- show-methods failed suite-MySuite -->
-                    </span>
-                    <div class="method-list-content failed suite-MySuite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.AuthenticationTest" hash-for-method="B_001">B_001</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-MySuite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,17 @@
                     <div class="method-list-content passed suite-MySuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.HomePageTest" hash-for-method="C_001">C_001</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.GameDetailTest" hash-for-method="H_003">H_003</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.GameDetailTest" hash-for-method="H_004">H_004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MySuite" title="TestCases.GameDetailTest" hash-for-method="H_005">H_005</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MySuite -->
@@ -131,39 +127,31 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MySuite" class="panel MySuite">
-          <div class="suite-MySuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestCases.AuthenticationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="B_001">
-                  </a> <!-- B_001 -->
-                  <span class="method-name">B_001</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	text hello guest is not exist did not expect to find [true] but found [false],
-	Logout button should not be exist, but its exist did not expect to find [true] but found [false]
-	at TestCases.AuthenticationTest.B_001(AuthenticationTest.java:47)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MySuite-class-failed -->
           <div class="suite-MySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.HomePageTest</span>
+              <span class="class-name">TestCases.GameDetailTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="C_001">
-                  </a> <!-- C_001 -->
-                  <span class="method-name">C_001</span>
+                  <a name="H_003">
+                  </a> <!-- H_003 -->
+                  <span class="method-name">H_003</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="H_004">
+                  </a> <!-- H_004 -->
+                  <span class="method-name">H_004</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="H_005">
+                  </a> <!-- H_005 -->
+                  <span class="method-name">H_005</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,16 +176,74 @@
   &lt;parameter name=&quot;useremail&quot; value=&quot;automation+android4@2359media.com&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Run devices 2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.AuthenticationTest&quot;&gt;
+      &lt;class name=&quot;TestCases.LaunchWebTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;B_001&quot;/&gt;
+          &lt;exclude name=&quot;A_001&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestCases.AuthenticationTest --&gt;
+      &lt;/class&gt; &lt;!-- TestCases.LaunchWebTest --&gt;
+      &lt;class name=&quot;TestCases.TopNavigationTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;B_001&quot;/&gt;
+          &lt;exclude name=&quot;B_002&quot;/&gt;
+          &lt;exclude name=&quot;B_003&quot;/&gt;
+          &lt;exclude name=&quot;B_004&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.TopNavigationTest --&gt;
       &lt;class name=&quot;TestCases.HomePageTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;C_001&quot;/&gt;
+          &lt;exclude name=&quot;C_001&quot;/&gt;
+          &lt;exclude name=&quot;C_004&quot;/&gt;
+          &lt;exclude name=&quot;C_005&quot;/&gt;
+          &lt;exclude name=&quot;C_006&quot;/&gt;
+          &lt;exclude name=&quot;C_007&quot;/&gt;
+          &lt;exclude name=&quot;C_009&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- TestCases.HomePageTest --&gt;
+      &lt;class name=&quot;TestCases.SearchTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;D_001&quot;/&gt;
+          &lt;exclude name=&quot;D_002&quot;/&gt;
+          &lt;exclude name=&quot;D_003&quot;/&gt;
+          &lt;exclude name=&quot;D_004&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.SearchTest --&gt;
+      &lt;class name=&quot;TestCases.SideMenuTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;E_002&quot;/&gt;
+          &lt;exclude name=&quot;E_003&quot;/&gt;
+          &lt;exclude name=&quot;E_004&quot;/&gt;
+          &lt;exclude name=&quot;E_005&quot;/&gt;
+          &lt;exclude name=&quot;E_006&quot;/&gt;
+          &lt;exclude name=&quot;E_008&quot;/&gt;
+          &lt;exclude name=&quot;E_009&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.SideMenuTest --&gt;
+      &lt;class name=&quot;TestCases.ScheduleTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;F_001&quot;/&gt;
+          &lt;exclude name=&quot;F_002&quot;/&gt;
+          &lt;exclude name=&quot;F_003&quot;/&gt;
+          &lt;exclude name=&quot;F_004&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.ScheduleTest --&gt;
+      &lt;class name=&quot;TestCases.WinnerListTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;G_001&quot;/&gt;
+          &lt;exclude name=&quot;G_002&quot;/&gt;
+          &lt;exclude name=&quot;G_003&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.WinnerListTest --&gt;
+      &lt;class name=&quot;TestCases.GameDetailTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;H_003&quot;/&gt;
+          &lt;include name=&quot;H_004&quot;/&gt;
+          &lt;include name=&quot;H_005&quot;/&gt;
+          &lt;exclude name=&quot;H_001&quot;/&gt;
+          &lt;exclude name=&quot;H_002&quot;/&gt;
+          &lt;exclude name=&quot;H_007&quot;/&gt;
+          &lt;exclude name=&quot;H_008&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestCases.GameDetailTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Run devices 2 --&gt;
 &lt;/suite&gt; &lt;!-- MySuite --&gt;
@@ -211,7 +257,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Run devices 2 (2 classes)</span>
+                <span class="test-name">Run devices 2 (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,20 +283,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'B_001')
-data.setCell(0, 2, 'TestCases.AuthenticationTest')
-data.setCell(0, 3, 25671);
+data.setCell(0, 1, 'H_003')
+data.setCell(0, 2, 'TestCases.GameDetailTest')
+data.setCell(0, 3, 24883);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'C_001')
-data.setCell(1, 2, 'TestCases.HomePageTest')
-data.setCell(1, 3, 21944);
+data.setCell(1, 1, 'H_004')
+data.setCell(1, 2, 'TestCases.GameDetailTest')
+data.setCell(1, 3, 18392);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'H_005')
+data.setCell(2, 2, 'TestCases.GameDetailTest')
+data.setCell(2, 3, 14829);
 window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 58 seconds</span>
               <div id="times-div-MySuite">
               </div> <!-- times-div-MySuite -->
             </div> <!-- times-div -->
@@ -265,19 +315,124 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-MySuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">54 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.AuthenticationTest</span>
+              <span class="ignored-class-name">TestCases.SideMenuTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">Authentication_01</span>
+                <span class="ignored-method-name">E_008</span>
                 <br/>
-                <span class="ignored-method-name">Authentication_02</span>
+                <span class="ignored-method-name">E_003</span>
                 <br/>
-                <span class="ignored-method-name">Authentication_03</span>
+                <span class="ignored-method-name">E_002</span>
                 <br/>
-                <span class="ignored-method-name">Authentication_04</span>
+                <span class="ignored-method-name">E_005</span>
+                <br/>
+                <span class="ignored-method-name">E_006</span>
+                <br/>
+                <span class="ignored-method-name">E_009</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">E_004</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.GameDetailTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">H_008</span>
+                <br/>
+                <span class="ignored-method-name">H_007</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">H_002</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">H_001</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.TopNavigationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">B_002</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">B_003</span>
+                <br/>
+                <span class="ignored-method-name">B_004</span>
+                <br/>
+                <span class="ignored-method-name">B_001</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.WinnerListTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">G_003</span>
+                <br/>
+                <span class="ignored-method-name">G_001</span>
+                <br/>
+                <span class="ignored-method-name">G_002</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.ScheduleTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">F_002</span>
+                <br/>
+                <span class="ignored-method-name">F_001</span>
+                <br/>
+                <span class="ignored-method-name">F_004</span>
+                <br/>
+                <span class="ignored-method-name">F_003</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.SearchTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">D_003</span>
+                <br/>
+                <span class="ignored-method-name">D_002</span>
+                <br/>
+                <span class="ignored-method-name">D_001</span>
+                <br/>
+                <span class="ignored-method-name">deleteScreenShot</span>
+                <br/>
+                <span class="ignored-method-name">a_SetUpAppium</span>
+                <br/>
+                <span class="ignored-method-name">D_004</span>
+                <br/>
+                <span class="ignored-method-name">quitDriver</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -286,11 +441,28 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">C_004</span>
                 <br/>
+                <span class="ignored-method-name">C_007</span>
+                <br/>
+                <span class="ignored-method-name">C_005</span>
+                <br/>
+                <span class="ignored-method-name">C_009</span>
+                <br/>
                 <span class="ignored-method-name">deleteScreenShot</span>
                 <br/>
                 <span class="ignored-method-name">a_SetUpAppium</span>
                 <br/>
+                <span class="ignored-method-name">C_006</span>
+                <br/>
+                <span class="ignored-method-name">C_001</span>
+                <br/>
                 <span class="ignored-method-name">quitDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.LaunchWebTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">A_001</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -302,42 +474,52 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.AuthenticationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCases.LaunchWebTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">a_SetUpAppium(beta, sg, 4723, RR8M901GK6R, Galaxy A50s, aws)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-suite before">
                 <span class="method-name">deleteScreenShot</span>
-                <span class="method-start">14984 ms</span>
+                <span class="method-start">16149 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.GameDetailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">16168 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">B_001</span>
-                <span class="method-start">15027 ms</span>
+                <span class="method-name">H_003</span>
+                <span class="method-start">26782 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">51669 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">H_004</span>
+                <span class="method-start">62308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">accessHomePage</span>
+                <span class="method-start">80705 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">H_005</span>
+                <span class="method-start">91259 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">resetApplicationState</span>
-                <span class="method-start">43258 ms</span>
+                <span class="method-start">106092 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">C_001</span>
-                <span class="method-start">47519 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">resetApplicationState</span>
-                <span class="method-start">69466 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.AuthenticationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCases.LaunchWebTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">77579 ms</span>
+                <span class="method-start">110089 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

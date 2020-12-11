@@ -3,6 +3,8 @@
  */
 package TestCases;
 
+import static org.testng.Assert.assertTrue;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -73,6 +75,7 @@ public class HomePageTest extends BaseSetting {
 		gameDetailPage gdp = PageFactory.initElements(driver, gameDetailPage.class);
 		
 		System.out.println("-> Tap on \"Play Now and Win\" button in carrousel");
+		Thread.sleep(7000);
 		hp.clickPlayNowAndWinButton();
 		
 		System.out.println("-> Verify URL is valid");
@@ -89,7 +92,7 @@ public class HomePageTest extends BaseSetting {
 		HomePage hp = PageFactory.initElements(driver, HomePage.class);
 		
 		System.out.println("-> Verify 3 top banner are displayed");
-		sa.assertTrue(hp.topBannersAreExist(), "3 top banners are not displayed");
+		assertTrue(hp.topBannersAreExist(), "3 top banners are not displayed");
 	}
 	
 	/*

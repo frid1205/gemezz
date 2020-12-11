@@ -1,0 +1,257 @@
+[RemoteTestNG] detected TestNG version 7.0.0
+Running on Galaxy A50s
+Dec 11, 2020 3:53:12 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+-----------=A_001=------------
+-> Verify page is in homescreen
+--Pass--
+-----------=B_001=------------
+-> Side menu button if user not login
+-> Tap On side menu button
+hello guest text = 20
+-> Logout if user not login
+hello guest text = 20
+-> Tap On side menu button
+-> Verify side menu
+hello guest text = Hello Guest
+The following asserts failed:
+	text hello guest is not exist, display text 20 and it automatically login without user will did not expect to find [true] but found [false]
+--Fail--
+-----------=B_002=------------
+-> Side menu button if user login
+-> Tap On side menu button
+-> login
+-> Verify side menu
+hello guest text = 2059431100
+--Pass--
+-----------=B_003=------------
+-> Tap on logo
+-> Verify page is in homescreen
+--Pass--
+-----------=B_004=------------
+-> Tap on search icon
+-> Verify page is in search page
+Page is not displayed did not expect to find [true] but found [false]
+--Fail--
+-----------=C_001=------------
+-> Verify Home Page display
+-> Verify home page
+total banner = 3
+--Pass--
+-----------=C_004=------------
+-> Tap on right/left button in carrousel
+-> Verify Carrousel right and left button can be clicked
+--Pass--
+-----------=C_005=------------
+-> Tap on "Play Now and Win" button in carrousel
+erro message : org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[io.appium.java_client.android.AndroidDriver, Capabilities: {BROWSER_NAME=Chrome, appActivity=com.google.android.apps.chrome.Main, appPackage=com.android.chrome, automationName=UiAutomator2, browserName=Chrome, chromeOptions={w3c=false}, chromedriverExecutable=/Users/fendyridwan/Documents/Project/gemezz3/driver/chromedriver_ver86_mac, databaseEnabled=false, desired={browserName=Chrome, platformName=android, BROWSER_NAME=Chrome, version=10, chromeOptions={w3c=false}, automationName=UiAutomator2, chromedriverExecutable=/Users/fendyridwan/Documents/Project/gemezz3/driver/chromedriver_ver86_mac, deviceName=Galaxy A50s, newCommandTimeout=0, noReset=true}, deviceApiLevel=29, deviceManufacturer=samsung, deviceModel=SM-A507FN, deviceName=RR8M901GK6R, deviceScreenDensity=420, deviceScreenSize=1080x2340, deviceUDID=RR8M901GK6R, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=0, noReset=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=10, statBarHeight=78, takesScreenshot=true, version=10, viewportRect={left=0, top=78, width=1080, height=2053}, warnings={}, webStorageEnabled=false}] -> xpath: //*[@id="st-container"]/div[2]/div/div/div/div[2]/div/div/div/div[1]/div/div[4]/div/div[1]/a] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Potatos-Mac', ip: 'fe80:0:0:0:1068:486a:ca6f:4ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Chrome, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., databaseEnabled: false, desired: {BROWSER_NAME: Chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., deviceName: Galaxy A50s, newCommandTimeout: 0, noReset: true, platformName: android, version: 10}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RR8M901GK6R, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RR8M901GK6R, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 78, takesScreenshot: true, version: 10, viewportRect: {height: 2053, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 14d4f9d7-8a68-4002-8e55-70544904a1ed
+==> 0
+-> Verify URL is valid
+--Pass--
+-----------=C_006=------------
+-> Verify 3 top banner are displayed
+total banner = 3
+--Pass--
+-----------=C_007=------------
+Tap on one of 3 top banner in home page
+--Pass--
+-----------=C_009=------------
+Tap on thumbnail card in section list
+--Pass--
+-----------=D_001=------------
+-> Tap on search icon
+-> Verify search page is displayed
+--Pass--
+-----------=D_002=------------
+-> Search available item
+-> Tap on search icon
+-> Type Text
+-> Enter search button
+-> Verify search result is displayed
+--Pass--
+-----------=D_003=------------
+-> Search unavailable item
+-> Tap on search icon
+-> Type Text
+-> Enter search button
+-> Verify search result is displayed
+text of no result found should not be displayed did not expect to find [true] but found [false]
+--Fail--
+-----------=D_004=------------
+-> search with entering special character in search field
+-> Tap on search icon
+-> Type Text
+-> Enter search button
+-> Verify search result is displayed
+text of no result found is not displayed displayed did not expect to find [true] but found [false]
+--Fail--
+-----------=E_002=------------
+-> Tap on Home Button
+-> Tap On side menu button
+-> Tap On home page menu button
+-> verify by URL
+--Pass--
+-----------=E_003=------------
+-> Tap on competition schedule
+-> Tap On side menu button
+-> Tap On schedule menu button
+-> verify by URL
+--Pass--
+-----------=E_004=------------
+-> Tap on winner list
+-> Tap On side menu button
+-> Tap On winner list menu button
+-> verify by URL
+--Pass--
+-----------=E_005=------------
+-> Logout button
+-> Tap On side menu button
+-> if login, user should logout
+hello guest text = 20
+-> Access URL
+-> Tap On side menu button
+-> verify subcribe button is exist
+-> if login, user should logout
+-> login
+-> Tap On side menu button
+-> verify subcribe button is exist
+--Pass--
+-----------=E_006=------------
+-> Logout button
+-> Tap On side menu button
+-> if login, user should logout
+hello guest text = 2059431100
+-> login
+-> Tap On side menu button
+-> verify logout button is exist
+-> Tap On logout button
+-> Tap On side menu button
+-> verify logout button should not exist
+--Pass--
+-----------=E_008=------------
+-> About Us Menu button
+-> Tap On side menu button
+-> Tap On About Us menu button
+-> verify about page by URL
+--Pass--
+-----------=E_009=------------
+-> About Us Menu button
+-> Tap On side menu button
+-> Tap On Customer Support menu button
+-> verify Customer page by URL
+--Pass--
+-----------=F_001=------------
+-> Access competition schedule page
+-> Tap on side menu button
+-> Tap on schedule menu button
+-> Verify schedule page is displayed
+-> Tap on 3 menu tab 
+--Pass--
+-----------=F_002=------------
+-> Tap on Current tab
+-> Tap on side menu button
+-> Tap on schedule menu button
+-> Tap on play now button
+-> verify detail game page is displayed by URL
+-> Tap on side menu button
+-> Tap on schedule menu button
+-> Verify load more button is working
+The following asserts failed:
+	load more button is not working properly did not expect to find [true] but found [false]
+--Fail--
+-----------=F_003=------------
+-> Tap on Comming Soon tab
+-> Tap on side menu button
+-> Tap on schedule menu button
+-> Tap on comming soon menu button
+-> Tap on play now button
+-> verify detail game page is displayed by URL
+-> Tap on side menu button
+-> Tap on schedule menu button
+-> Tap on comming soon menu button
+-> Verify load more button is working
+The following asserts failed:
+	load more button is not working properly did not expect to find [true] but found [false]
+--Fail--
+-----------=F_004=------------
+-> Tap on Comming Soon tab
+-> Tap on side menu button
+-> Tap on schedule menu button
+-> Tap on comming soon menu button
+-> Tap on play now button
+-> verify detail game page is displayed by URL
+-> Tap on side menu button
+-> Tap on schedule menu button
+Expected condition failed: waiting for visibility of [[io.appium.java_client.android.AndroidDriver, Capabilities: {BROWSER_NAME=Chrome, appActivity=com.google.android.apps.chrome.Main, appPackage=com.android.chrome, automationName=UiAutomator2, browserName=Chrome, chromeOptions={w3c=false}, chromedriverExecutable=/Users/fendyridwan/Documents/Project/gemezz3/driver/chromedriver_ver86_mac, databaseEnabled=false, desired={browserName=Chrome, platformName=android, BROWSER_NAME=Chrome, version=10, chromeOptions={w3c=false}, automationName=UiAutomator2, chromedriverExecutable=/Users/fendyridwan/Documents/Project/gemezz3/driver/chromedriver_ver86_mac, deviceName=Galaxy A50s, newCommandTimeout=0, noReset=true}, deviceApiLevel=29, deviceManufacturer=samsung, deviceModel=SM-A507FN, deviceName=RR8M901GK6R, deviceScreenDensity=420, deviceScreenSize=1080x2340, deviceUDID=RR8M901GK6R, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, newCommandTimeout=0, noReset=true, pixelRatio=2.625, platform=LINUX, platformName=Android, platformVersion=10, statBarHeight=78, takesScreenshot=true, version=10, viewportRect={left=0, top=78, width=1080, height=2053}, warnings={}, webStorageEnabled=false}] -> xpath: //*[contains(text(),'Schedule') and contains(@href,'competitionschedule')]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Potatos-Mac', ip: 'fe80:0:0:0:1068:486a:ca6f:4ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '1.8.0_261'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {BROWSER_NAME: Chrome, appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., databaseEnabled: false, desired: {BROWSER_NAME: Chrome, automationName: UiAutomator2, browserName: Chrome, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/fendyridwan/Document..., deviceName: Galaxy A50s, newCommandTimeout: 0, noReset: true, platformName: android, version: 10}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-A507FN, deviceName: RR8M901GK6R, deviceScreenDensity: 420, deviceScreenSize: 1080x2340, deviceUDID: RR8M901GK6R, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 0, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 78, takesScreenshot: true, version: 10, viewportRect: {height: 2053, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 14d4f9d7-8a68-4002-8e55-70544904a1ed
+--Fail--
+-----------=G_001=------------
+-> Access Winners List page
+-> Tap on side menu button
+-> Tap on Winner List menu button
+-> Verify winner list page is displayed
+--Pass--
+-----------=G_002=------------
+-> Access Winners List page
+-> Tap on side menu button
+-> Tap on Winner List menu button
+-> Tap on tab all
+-> Verify tab all is selected
+--Pass--
+-----------=G_003=------------
+-> Access Winners List page
+-> Tap on side menu button
+-> Tap on Winner List menu button
+-> Tap on tab 1
+-> Verify tab 1 is selected
+-> Tap on tab 2
+-> Verify tab 2 is selected
+--Pass--
+-----------=H_001=------------
+-> Access game detail page
+-> click on banner
+-> Verify game detail page is displayed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(@class,'leaderboard')]' (tried for 10 second(s) with 500 milliseconds interval)
+The following asserts failed:
+	Like button is not displayed did not expect to find [true] but found [false],
+	Share button is not displayed did not expect to find [true] but found [false],
+	leaderboard is not displayed did not expect to find [true] but found [false]
+--Fail--
+-----------=H_003=------------
+-> Access game detail page
+-> click on banner
+-> Verify like button is working or not
+-> Click on like button
+--Pass--
+-----------=H_004=------------
+-> Access game detail page
+-> click on banner
+-> Verify Share button is working or not
+-> Click on share button
+--Pass--
+-----------=H_005=------------
+-> Share game via whatsapp
+-> click on banner
+-> Verify whatsapp button is working or not
+-> Click on share button
+--Pass--
+-----------=H_007=------------
+-> Play the game with subcribed user
+hello guest text = 20
+-> login
+-> Go to detail game page
+--Pass--
+-----------=H_008=------------
+-> Play the game with unsubcribed user
+hello guest text = 2059431100
+-> Go to detail game page
+--Pass--

@@ -5,6 +5,7 @@ package Pages;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -23,7 +24,12 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
  */
 public class searchPage extends BaseSetting{
 	
-	LoginPage
+	WebDriver driver;
+	
+	/*Landing Page*/
+	public searchPage(WebDriver driver) {
+		this.driver = driver;
+	}
 	
 	@FindBy(how = How.XPATH, using = "//*[@id=\"inputsearch\"]")
 	@CacheLookup
@@ -49,6 +55,9 @@ public class searchPage extends BaseSetting{
 	@CacheLookup
 	List<WebElement> searchPage;
 	
+	@FindBy(how = How.XPATH, using = "//*[contains(text(),\"No Result Found\")]")
+	@CacheLookup
+	List<WebElement> searchNoResultText;
 	
 	
 	public void inputSearch(String text) throws InterruptedException
@@ -61,9 +70,9 @@ public class searchPage extends BaseSetting{
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(searchButton)).click();
 	}
 	
-	public boolean searchResultisExist() {
+	public boolean searchResultisExist(String text) {
 		if(!searchResult1.isEmpty()) {
-			if((new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(searchResult)).getText().contains("Space")) {
+			if((new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(searchResult)).getText().contains(text)) {
 				return true;
 			}else {
 				return false;
@@ -76,6 +85,15 @@ public class searchPage extends BaseSetting{
 	
 	public boolean isSearchPage() {
 		if(!searchPage.isEmpty()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	public boolean isNoResultFoundisExist() {
+		if(!searchNoResultText.isEmpty()) {
 			return true;
 		}
 		else {

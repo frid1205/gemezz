@@ -11,15 +11,16 @@
   <parameter name="useremail" value="automation+android4@2359media.com"/>
   <test thread-count="5" name="Run devices 2(failed)">
     <classes>
-      <class name="TestCases.AuthenticationTest">
+      <class name="TestCases.GameDetailTest">
         <methods>
           <include name="resetApplicationState"/>
-          <include name="B_001"/>
+          <include name="H_005"/>
           <include name="deleteScreenShot"/>
           <include name="a_SetUpAppium"/>
+          <include name="accessHomePage"/>
           <include name="quitDriver"/>
         </methods>
-      </class> <!-- TestCases.AuthenticationTest -->
+      </class> <!-- TestCases.GameDetailTest -->
     </classes>
   </test> <!-- Run devices 2(failed) -->
 </suite> <!-- Failed suite [MySuite] -->

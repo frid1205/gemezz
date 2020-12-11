@@ -2,7 +2,9 @@ package BaseSetting;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -13,7 +15,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.touch.TouchActions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
@@ -28,8 +32,11 @@ import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.touch.LongPressOptions;
 import Pages.HomePage;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.offset.PointOption;
 
@@ -39,6 +46,7 @@ public class BaseSetting {
 	public static URL url;
 	
 	public static AndroidDriver<WebElement> driver;
+	public static WebDriver driver1;
 	public static WebElement element;
 	public static TouchAction t;
 	public static Dimension size;
@@ -63,9 +71,9 @@ public class BaseSetting {
 	@Parameters ({"env","loc","port","udid","devicename","runningon"})
 	public void a_SetUpAppium(String env, String loc, String port, String udid, String devicename, String runningon) throws MalformedURLException, FileNotFoundException 
 	{
-		//System.setOut(new PrintStream(new FileOutputStream("foxandroid output.txt")));
-		System.out.println("Running on "+devicename);
 		
+		System.out.println("Running on "+devicename);
+		//System.setOut(new PrintStream(new FileOutputStream("Gemezz output.txt")));
 		final String URL_STRING;
 		if(runningon.equals("aws")) {
 			URL_STRING = "http://127.0.0.1:4723/wd/hub";
@@ -83,7 +91,7 @@ public class BaseSetting {
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
 		capabilities.setCapability(MobileCapabilityType.VERSION, "10");
-		capabilities.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", true));
+		capabilities.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
 		capabilities.setCapability("chromedriverExecutable", System.getProperty("user.dir")+"/driver/chromedriver_ver86_mac");
 		capabilities.setCapability("newCommandTimeout", 0);
 		capabilities.setCapability(MobileCapabilityType.NO_RESET, "true");
@@ -130,40 +138,18 @@ public class BaseSetting {
     	
     }
     
+    
     public void tap(int x, int y) {
-    	/*
-    	WebElement el1 = driver.findElementByXPath("");
-    	
-    	  TouchAction action = new TouchAction(driver);
-    	  action.press(el0).moveTo(el1).release();
-    	  
-    	WebElement el0 = driver.findElement(By.xpath("//div[@id=\"st-trigger-effects\"]/button"));
-
-    	 AndroidTouchAction touch = new AndroidTouchAction (driver);
-    	  touch.tap (TapOptions.tapOptions ()
-    	      .withElement (ElementOption.element(el0)))
-    	    .perform ();
-    	size = driver.manage().window().getSize();
-    	System.out.println("size - "+size);
-    	System.out.println("height - "+size.getHeight());
-    	System.out.println("width - "+size.getWidth());
-    	*/
     	//70,310
     	TouchAction action = new TouchAction(driver);
     	action.press(PointOption.point(x,y)) // x and y is the co-ordinate where you want to click.
     	.release()
     	.perform();
     	
-
-    	/*
-    	WebElement expandList = 
-    		       driver.findElementByXPath("//div[@id=\"st-trigger-effects\"]/button");
-    	//new Actions(driver).clickAndHold(expandList).perform();
-    		    TouchActions t = new TouchActions(driver);
-    		    t.singleTap(expandList);
-    		    t.perform();
-    	*/
-    	
+    }
+    
+    public void BackButton() {
+    	((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
     }
     
     public void scrollDownIntoElement(String el) {
@@ -183,7 +169,7 @@ public class BaseSetting {
     }
     
     public void backButton() {
-    	driver.navigate().back();
+    	((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
     }
     
   //get driver of this class for screenshot

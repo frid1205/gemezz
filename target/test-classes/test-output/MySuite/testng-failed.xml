@@ -2,18 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [MySuite]">
   <parameter name="loc" value="sg"/>
-  <parameter name="password" value="2359media"/>
+  <parameter name="password" value="12345678"/>
   <parameter name="port" value="4723"/>
   <parameter name="devicename" value="Galaxy A50s"/>
   <parameter name="env" value="beta"/>
   <parameter name="udid" value="RR8M901GK6R"/>
-  <parameter name="runningon" value="aws"/>
-  <parameter name="useremail" value="automation+android4@2359media.com"/>
-  <test thread-count="5" name="Run devices 2(failed)">
+  <parameter name="runningon" value="realDevice"/>
+  <parameter name="useremail" value="fendy.ridwan@lumoshive.com"/>
+  <test thread-count="5" name="Regression Test part 1(failed)">
     <classes>
       <class name="TestCases.ScheduleTest">
         <methods>
-          <include name="F_002"/>
+          <include name="F_004"/>
           <include name="resetApplicationState"/>
           <include name="deleteScreenShot"/>
           <include name="a_SetUpAppium"/>
@@ -22,5 +22,5 @@
         </methods>
       </class> <!-- TestCases.ScheduleTest -->
     </classes>
-  </test> <!-- Run devices 2(failed) -->
+  </test> <!-- Regression Test part 1(failed) -->
 </suite> <!-- Failed suite [MySuite] -->

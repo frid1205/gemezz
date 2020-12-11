@@ -80,7 +80,7 @@ public class ScheduleTest extends BaseSetting {
 		hp1.clickSchedule();
 		
 		System.out.println("-> Verify load more button is working");
-		sa.assertTrue(sp.verifyLoadMoreButtonIsWorkingOrNot(), "load more button is not working");
+		sa.assertTrue(sp.verifyLoadMoreButtonInCurrentTab(), "load more button is not working properly");
 		
 		sa.assertAll();
 	}
@@ -124,7 +124,7 @@ public class ScheduleTest extends BaseSetting {
 		sp1.clickCoomingSoonTab();
 		
 		System.out.println("-> Verify load more button is working");
-		sa.assertTrue(sp1.verifyLoadMoreButtonIsWorkingInCommingSoon(), "load more button is not working");
+		sa.assertTrue(sp1.verifyLoadMoreButtonIsWorkingInCommingSoon(), "load more button is not working properly");
 		
 		sa.assertAll();
 	}
@@ -169,7 +169,7 @@ public class ScheduleTest extends BaseSetting {
 		sp1.clickFinishTab();
 		
 		System.out.println("-> Verify load more button is working");
-		sa.assertTrue(sp1.verifyLoadMoreButtonIsWorkingInFinishTab(), "load more button is not working");
+		sa.assertTrue(sp1.verifyLoadMoreButtonIsWorkingInFinishTab(), "load more button is not working properly");
 		
 		sa.assertAll();
 	}

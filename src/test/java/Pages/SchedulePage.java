@@ -53,13 +53,83 @@ public class SchedulePage extends BaseSetting{
 	@CacheLookup
 	List<WebElement> FinishTab1;
 	
-	@FindBy(how = How.XPATH, using = "//div[@class='more-winners'] //a[@class='k5-btn-short btn-indigo js-more-winners load-more-schedule' and contains(text(),'LOAD MORE')]")
+
+	@FindBy(how = How.XPATH, using = "//*[@id=\"all\"]/div[1]/div[1]/div/a")
 	@CacheLookup
-	WebElement loadMoreButton;
+	WebElement firstList;
+	
+	
+	
+	@FindBy(how = How.XPATH, using = "//a[contains(text(),'NOW')]")
+	@CacheLookup
+	WebElement playNowButton;
+	
+	//==========================Current Tab=================
+	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[1]/div[1]/div/a")
+	@CacheLookup
+	WebElement firstListCurrentTabSoon;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[1]")
+	@CacheLookup
+	WebElement firstSessionListCurrentTab;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[2]")
+	@CacheLookup
+	WebElement secondSessionListCurrentTab;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[3]")
+	@CacheLookup
+	WebElement secondSessionListCurrentTab2;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[1]")
+	@CacheLookup
+	List<WebElement> firstSessionListCurrentTab1;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[2]")
+	@CacheLookup
+	List<WebElement> secondSessionListCurrentTab1;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[3]")
+	@CacheLookup
+	List<WebElement> secondSessionListCurrentTab21;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='more-winners'] //a[@class='k5-btn-short btn-indigo js-more-winners load-more-schedule' and contains(text(),'LOAD MORE')]")
 	@CacheLookup
-	List<WebElement> loadMoreButton1;
+	WebElement loadMoreButtonCurrent;
+	
+	@FindBy(how = How.XPATH, using = "//div[@class='more-winners'] //a[@class='k5-btn-short btn-indigo js-more-winners load-more-schedule' and contains(text(),'LOAD MORE')]")
+	@CacheLookup
+	List<WebElement> loadMoreButtonCurrent1;
+	
+	
+	//=========================Comming Soon tab===============
+	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[1]/div[1]/div/a")
+	@CacheLookup
+	WebElement firstListCommingSoon;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[1]")
+	@CacheLookup
+	WebElement firstSessionListCommingSoonTab;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[2]")
+	@CacheLookup
+	WebElement secondSessionListCommingSoonTab;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[3]")
+	@CacheLookup
+	WebElement secondSessionListCommingSoonTab2;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[1]")
+	@CacheLookup
+	List<WebElement> firstSessionListCommingSoonTab1;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[2]")
+	@CacheLookup
+	List<WebElement> secondSessionListCommingSoonTab1;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[3]")
+	@CacheLookup
+	List<WebElement> secondSessionListCommingSoonTab21;
 	
 	@FindBy(how = How.XPATH, using = "//div[@id='comingsoon'] //*[@id=\"morebtn_today\"]/div/a")
 	@CacheLookup
@@ -69,6 +139,36 @@ public class SchedulePage extends BaseSetting{
 	@CacheLookup
 	List<WebElement> loadMoreButtonCS1;
 	
+	
+	//=================================Finish Tab=====================
+	@FindBy(how = How.XPATH, using = "//*[@id=\"finish\"]/div[1]/div[1]/div/a")
+	@CacheLookup
+	WebElement firstListFinishTab;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"finish\"]/div[1]")
+	@CacheLookup
+	WebElement firstSessionListFinishTab;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"finish\"]/div[2]")
+	@CacheLookup
+	WebElement secondSessionListFinishTab;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"finish\"]/div[3]")
+	@CacheLookup
+	WebElement secondSessionListFinishTab2;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"finish\"]/div[1]")
+	@CacheLookup
+	List<WebElement> firstSessionListFinishTab1;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"finish\"]/div[2]")
+	@CacheLookup
+	List<WebElement> secondSessionListFinishTab1;
+	
+	@FindBy(how = How.XPATH, using = "//*[@id=\"finish\"]/div[3]")
+	@CacheLookup
+	List<WebElement> secondSessionListFinishTab21;
+	
 	@FindBy(how = How.XPATH, using = "//div[@id='finish'] //*[@id=\"morebtn_today\"]/div/a")
 	@CacheLookup
 	WebElement loadMoreButtonFinish;
@@ -76,94 +176,6 @@ public class SchedulePage extends BaseSetting{
 	@FindBy(how = How.XPATH, using = "//div[@id='finish'] //*[@id=\"morebtn_today\"]/div/a")
 	@CacheLookup
 	List<WebElement> loadMoreButtonFinish1;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"all\"]/div[1]/div[1]/div/a")
-	@CacheLookup
-	WebElement firstList;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[1]/div[3]/div/a")
-	@CacheLookup
-	WebElement thirdList;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[2]/div[1]/div/a")
-	@CacheLookup
-	WebElement thirdList21;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[2]/div[2]/div/a")
-	@CacheLookup
-	WebElement thirdList22;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[2]/div[3]/div/a")
-	@CacheLookup
-	WebElement thirdList23;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[1]/div[3]/div/a")
-	@CacheLookup
-	List<WebElement> thirdList1;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[2]/div[1]/div/a")
-	@CacheLookup
-	List<WebElement> thirdList211;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[2]/div[2]/div/a")
-	@CacheLookup
-	List<WebElement> thirdList221;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='all']/div[2]/div[3]/div/a")
-	@CacheLookup
-	List<WebElement> thirdList231;
-	
-	@FindBy(how = How.XPATH, using = "//a[contains(text(),'NOW')]")
-	@CacheLookup
-	WebElement playNowButton;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[1]/div[1]/div/a")
-	@CacheLookup
-	WebElement firstListCommingSoon;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[1]/div[3]/div/a")
-	@CacheLookup
-	WebElement thirdCommingSoonList;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[2]/div[1]/div/a")
-	@CacheLookup
-	WebElement thirdCommingSoonList21;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[2]/div[2]/div/a")
-	@CacheLookup
-	WebElement thirdCommingSoonList22;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[2]/div[3]/div/a")
-	@CacheLookup
-	WebElement thirdCommingSoonList23;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[1]/div[3]/div/a")
-	@CacheLookup
-	List<WebElement> thirdCommingSoonList1;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[2]/div[1]/div/a")
-	@CacheLookup
-	List<WebElement> thirdCommingSoonList211;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[2]/div[2]/div/a")
-	@CacheLookup
-	List<WebElement> thirdCommingSoonList221;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id='comingsoon']/div[2]/div[3]/div/a")
-	@CacheLookup
-	List<WebElement> thirdCommingSoonList231;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"finish\"]/div[1]/div[1]/div/a")
-	@CacheLookup
-	WebElement firstListFinishTab;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"finish\"]/div[1]")
-	@CacheLookup
-	List<WebElement> firstSessionListFinishTab;
-	
-	@FindBy(how = How.XPATH, using = "//*[@id=\"finish\"]/div[2]")
-	@CacheLookup
-	List<WebElement> secondSessionListFinishTab;
 	
 	
 	public void clickCurrentTab() throws InterruptedException
@@ -215,15 +227,22 @@ public class SchedulePage extends BaseSetting{
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(firstList)).click();
 	}
 	
+	//===============Load More button from all tab============================//
 	public void clickLoadMoreButton() throws InterruptedException
 	{
-		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(loadMoreButton)).click();
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(loadMoreButtonCurrent)).click();
 	}
 	
 	public void clickLoadMoreButtonCS() throws InterruptedException
 	{
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(loadMoreButtonCS)).click();
 	}
+	
+	public void clickLoadMoreButtonFinish() throws InterruptedException
+	{
+		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(loadMoreButtonFinish)).click();
+	}
+	//========================================================================//
 	
 	public void click3tab() {
 		SoftAssert sac = new SoftAssert();
@@ -255,40 +274,52 @@ public class SchedulePage extends BaseSetting{
 		
 	}
 	
-	public boolean verifyLoadMoreButtonIsWorkingOrNot() throws InterruptedException{
-		scrollDownIntoElement("//p[@class='copyright']");
-		//scrollDownIntoElement("//div[@class='more-winners'] //a[@class='k5-btn-short btn-indigo js-more-winners load-more-schedule' and contains(text(),'LOAD MORE')]");
-		String getAttribute1 = "";
-		String getAttribute2 = "";
-		
-		if(!thirdList1.isEmpty()==true) {
-			getAttribute1 = thirdList.getAttribute("href");
+	public boolean verifyLoadMoreButtonInCurrentTab() throws InterruptedException{
+		int getExist1 = 0;
+		int loadMoreisExist = 0;
+		int i=1;
+		if(!firstSessionListCurrentTab1.isEmpty()) {
+			getExist1 = getExist1 + 1;
 		}
 		
-		if(!loadMoreButton1.isEmpty()==true) {
-			clickLoadMoreButton();
-		
+		while(i<=3) {
 			scrollDownIntoElement("//p[@class='copyright']");
+			//scrollDownIntoElement("//div[@class='more-winners'] //a[@class='k5-btn-short btn-indigo js-more-winners load-more-schedule' and contains(text(),'LOAD MORE')]");
 			
-			if(!thirdList211.isEmpty()==true ) {
-				getAttribute2 = thirdList21.getAttribute("href");
-			}else
-			if(!thirdList221.isEmpty()==true) {
-				getAttribute2 = thirdList22.getAttribute("href");
-			}else
-			if(!thirdList231.isEmpty()==true) {
-				getAttribute2 = thirdList23.getAttribute("href");
-			}else {
-				//no more game displayed
+			if(!loadMoreButtonCurrent1.isEmpty()==true) {
+				clickLoadMoreButton();
+				
+				if(!secondSessionListCurrentTab1.isEmpty()) {
+					//System.out.println(secondSessionListCurrentTab1.getAttribute("value")+" isvisible"+secondSessionListCurrentTab1.isDisplayed());
+					if(secondSessionListCurrentTab.isDisplayed()) {
+						getExist1 = getExist1 + 1;
+					}
+					
+				}
+				else 
+				if(!secondSessionListCurrentTab21.isEmpty()) {
+					if(secondSessionListCurrentTab2.isDisplayed()) {
+						getExist1 = getExist1 + 1;
+					}
+					
+				}
+				loadMoreisExist = loadMoreisExist + 1;
 			}
-			
+			i++;
 		}
-		System.out.println(getAttribute1 +"---"+getAttribute2);
-		if(!getAttribute1.equals(getAttribute2)) {
+		
+		if(loadMoreisExist>0) 
+		{
+			if(getExist1==loadMoreisExist) 
+			{
+				return true;
+			}else
+			{
+				return false;
+			}
+		}else
+		{
 			return true;
-		}
-		else {
-			return false;
 		}
 	}
 	
@@ -305,40 +336,52 @@ public class SchedulePage extends BaseSetting{
 		Thread.sleep(6000);
 	}
 	
-	public boolean verifyLoadMoreButtonIsWorkingInCommingSoon() throws InterruptedException {
-		scrollDownIntoElement("//p[@class='copyright']");
-		//scrollDownIntoElement("//div[@class='more-winners'] //a[@class='k5-btn-short btn-indigo js-more-winners load-more-schedule' and contains(text(),'LOAD MORE')]");
-		String getAttribute1 = "";
-		String getAttribute2 = "";
-		
-		if(!thirdCommingSoonList1.isEmpty()==true) {
-			getAttribute1 = thirdCommingSoonList.getAttribute("href");
+	public boolean verifyLoadMoreButtonIsWorkingInCommingSoon() throws InterruptedException 
+	{
+		int getExist1 = 0;
+		int loadMoreisExist = 0;
+		int i=1;
+		if(!firstSessionListCommingSoonTab1.isEmpty()) {
+			getExist1 = getExist1 + 1;
 		}
 		
-		if(!loadMoreButtonCS1.isEmpty()==true) {
-			clickLoadMoreButtonCS();
-		
+		while(i<=3) {
+			
 			scrollDownIntoElement("//p[@class='copyright']");
+			//scrollDownIntoElement("//div[@class='more-winners'] //a[@class='k5-btn-short btn-indigo js-more-winners load-more-schedule' and contains(text(),'LOAD MORE')]");
 			
-			if(!thirdCommingSoonList211.isEmpty()==true ) {
-				getAttribute2 = thirdCommingSoonList21.getAttribute("href");
-			}else
-			if(!thirdCommingSoonList221.isEmpty()==true) {
-				getAttribute2 = thirdCommingSoonList22.getAttribute("href");
-			}else
-			if(!thirdCommingSoonList231.isEmpty()==true) {
-				getAttribute2 = thirdCommingSoonList23.getAttribute("href");
-			}else {
-				//no more game displayed
+			if(!loadMoreButtonCS1.isEmpty()==true) 
+			{
+				clickLoadMoreButtonCS();
+				if(!secondSessionListCommingSoonTab1.isEmpty() && i==1) {
+					if(secondSessionListCommingSoonTab.isDisplayed()) {
+						getExist1 = getExist1 + 1;
+					}
+					
+				}else 
+				if(!secondSessionListCommingSoonTab21.isEmpty() && i==2)
+				{
+					if(secondSessionListCommingSoonTab2.isDisplayed()) {
+						getExist1 = getExist1 + 1;
+					}
+				}
+				loadMoreisExist = loadMoreisExist + 1;
 			}
-			
+			i++;
 		}
-		System.out.println(getAttribute1 +"---"+getAttribute2);
-		if(!getAttribute1.equals(getAttribute2)) {
+
+		if(loadMoreisExist>0) 
+		{
+			if(getExist1==loadMoreisExist) 
+			{
+				return true;
+			}else
+			{
+				return false;
+			}
+		}else
+		{
 			return true;
-		}
-		else {
-			return false;
 		}
 	}
 	
@@ -347,34 +390,42 @@ public class SchedulePage extends BaseSetting{
 		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(firstListFinishTab)).click();
 	}
 	
-	public void clickLoadMoreButtonFinish() throws InterruptedException
-	{
-		(new WebDriverWait(driver, 10)).until(ExpectedConditions.visibilityOf(loadMoreButtonFinish)).click();
-	}
-	
 	public boolean verifyLoadMoreButtonIsWorkingInFinishTab() throws InterruptedException 
 	{
 		int getExist1 = 0;
 		int loadMoreisExist = 0;
-		if(!firstSessionListFinishTab.isEmpty()) {
+		int i = 1;
+		if(!firstSessionListFinishTab1.isEmpty()) {
 			getExist1 = getExist1 + 1;
 		}
 		
-		scrollDownIntoElement("//p[@class='copyright']");
-		//scrollDownIntoElement("//div[@class='more-winners'] //a[@class='k5-btn-short btn-indigo js-more-winners load-more-schedule' and contains(text(),'LOAD MORE')]");
-		
-		if(!loadMoreButtonFinish1.isEmpty()==true) {
-			clickLoadMoreButtonFinish();
+			while(i<=3) {
+			scrollDownIntoElement("//p[@class='copyright']");
+			//scrollDownIntoElement("//div[@class='more-winners'] //a[@class='k5-btn-short btn-indigo js-more-winners load-more-schedule' and contains(text(),'LOAD MORE')]");
 			
-			if(!secondSessionListFinishTab.isEmpty()) {
-				getExist1 = getExist1 + 1;
+			if(!loadMoreButtonFinish1.isEmpty()==true) {
+				clickLoadMoreButtonFinish();
+				
+				if(!secondSessionListFinishTab1.isEmpty()) {
+					if(secondSessionListFinishTab.isDisplayed()) {
+						getExist1 = getExist1 + 1;
+					}
+					
+				}else
+				if(!secondSessionListFinishTab21.isEmpty()) {
+					if(secondSessionListFinishTab2.isDisplayed()) {
+						getExist1 = getExist1 + 1;
+					}
+					
+				}
+				loadMoreisExist = loadMoreisExist + 1;
 			}
-			loadMoreisExist = loadMoreisExist + 1;
+			i++;
 		}
 		
 		if(loadMoreisExist>0) 
 		{
-			if(getExist1>1) 
+			if(getExist1==loadMoreisExist) 
 			{
 				return true;
 			}else

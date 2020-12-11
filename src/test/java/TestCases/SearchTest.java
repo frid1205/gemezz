@@ -82,7 +82,7 @@ public class SearchTest extends BaseSetting{
 		Thread.sleep(3000);
 	
 		System.out.println("-> Verify search result is displayed");
-		Assert.assertTrue(sp.isNoResultFoundisExist(), "Search result should not be displayed");
+		Assert.assertTrue(sp.isNoResultFoundisExist(), "text of no result found should not be displayed");
 	}
 	
 	/*
@@ -107,6 +107,6 @@ public class SearchTest extends BaseSetting{
 		Thread.sleep(3000);
 	
 		System.out.println("-> Verify search result is displayed");
-		Assert.assertTrue(sp.isNoResultFoundisExist(), "Search result should not be displayed");
+		Assert.assertTrue(sp.isNoResultFoundisExist(), "text of no result found is not displayed displayed");
 	}
 }

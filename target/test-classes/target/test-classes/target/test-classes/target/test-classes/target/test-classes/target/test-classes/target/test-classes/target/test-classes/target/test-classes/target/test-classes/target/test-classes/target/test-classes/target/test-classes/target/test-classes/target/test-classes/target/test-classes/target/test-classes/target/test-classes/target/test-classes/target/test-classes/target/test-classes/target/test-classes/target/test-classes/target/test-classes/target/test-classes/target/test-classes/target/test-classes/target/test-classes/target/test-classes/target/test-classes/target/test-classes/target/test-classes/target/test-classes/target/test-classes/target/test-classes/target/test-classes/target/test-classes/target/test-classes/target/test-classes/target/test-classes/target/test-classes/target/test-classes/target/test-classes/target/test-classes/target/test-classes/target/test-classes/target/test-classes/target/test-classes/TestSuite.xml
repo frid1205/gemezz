@@ -6,31 +6,82 @@
 		<parameter name="udid" value="RR8M901GK6R"></parameter>
 		<parameter name="devicename" value="Galaxy A50s"></parameter>
 		<parameter name="port" value="4723"></parameter>
-		<parameter name="useremail" value="automation+android4@2359media.com"></parameter>
-		<parameter name="password" value="2359media"></parameter>
-		<parameter name="runningon" value="aws"></parameter>
-	  	<test name="Run devices 2" >
+		<parameter name="useremail" value="fendy.ridwan@lumoshive.com"></parameter>
+		<parameter name="password" value="12345678"></parameter>
+		<parameter name="runningon" value="realDevice"></parameter>
+	  	<test name="Regression Test part 1" >
 		    <classes>
 		    	<class name="TestCases.LaunchWebTest">
 	    			<methods>
-	    				<include name="A_001"/>
+	    				<exclude name="A_001"/>
 	    			</methods>
 	    		</class>
 	     		<class name="TestCases.TopNavigationTest">
 	    			<methods>
-	    				<include name="B_001"/>
-	    				<include name="B_002"/>
-	    				<include name="B_003"/>
-	    				<include name="B_004"/>
+	    				<exclude name="B_001"/>
+	    				<exclude name="B_002"/>
+	    				<exclude name="B_003"/>
+	    				<exclude name="B_004"/>
 	    			</methods>
 	    		</class>
 	    		<class name="TestCases.HomePageTest">
 	    			<methods>
-	    				<include name="C_001"/>
-	    				<include name="C_004"/>
+	    				<exclude name="C_001"/>
+	    				<exclude name="C_004"/>
+	    				<exclude name="C_005"/>
+	    				<exclude name="C_006"/>
+	    				<exclude name="C_007"/>
+	    				<exclude name="C_009"/>
+	    			</methods>
+	    		</class>
+	    		<class name="TestCases.SearchTest">
+	    			<methods>
+	    				<exclude name="D_001"/>
+	    				<exclude name="D_002"/>
+	    				<exclude name="D_003"/>
+	    				<exclude name="D_004"/>
 	    			</methods>
 	    		</class>
 	    		
+	    		<class name="TestCases.SideMenuTest">
+	    			<methods>
+	    				<exclude name="E_002"/>
+	    				<exclude name="E_003"/>
+	    				<exclude name="E_004"/>
+	    				<exclude name="E_005"/>
+	    				<exclude name="E_006"/>
+	    				<exclude name="E_008"/>
+	    				<include name="E_009"/>
+	    			</methods>
+	    		</class>
+	    		
+	    		<class name="TestCases.ScheduleTest">
+	    			<methods>
+	    				<exclude name="F_001"/>
+	    				<exclude name="F_002"/>
+	    				<exclude name="F_003"/>
+	    				<include name="F_004"/>
+	    			</methods>
+	    		</class>
+	    		
+	    		<class name="TestCases.WinnerListTest">
+	    			<methods>
+	    				<exclude name="G_001"/>
+	    				<exclude name="G_002"/>
+	    				<exclude name="G_003"/>
+	    			</methods>
+	    		</class>
+	    		
+	    		<class name="TestCases.GameDetailTest">
+	    			<methods>
+	    				<exclude name="H_001"/>
+	    				<exclude name="H_003"/>
+	    				<exclude name="H_004"/>
+	    				<exclude name="H_005"/>
+	    				<exclude name="H_007"/>
+	    				<exclude name="H_008"/>
+	    			</methods>
+	    		</class>
 		    </classes>  
 	  </test>
   
